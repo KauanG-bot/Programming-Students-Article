@@ -1,20 +1,406 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-size: 14px;
 }
-.v1973_3150 {
+
+.tela {
   width: 100%;
-  height: 2000px;
-  background-repeat: no-repeat;
-  background-position: center center;
+  height: 210%;
+  background: rgba(8, 0, 44, 1);
+  opacity: 1;
+  position: absolute;
   top: 0px;
   left: 0px;
-  position: absolute;
+  overflow: hidden;
+}
 
+.name {
+  color: #fff;
 }
-.Home{
-text-align: center;
-left: 40%;
+
+.Home {
+  width: 92px;
+  color: rgba(95, 159, 255, 1);
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 25px;
+  opacity: 1;
+  text-align: left;
+  font-weight: bold;
 }
+
+.Artigos {
+  width: 110px;
+  color: rgba(95, 159, 255, 1);
+  position: absolute;
+  top: 1%;
+  left: 75%;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 25px;
+  opacity: 1;
+  text-align: left;
+  font-weight: bold;
+}
+
+.Sobre {
+  width: 155px;
+  color: rgba(95, 159, 255, 1);
+  position: absolute;
+  top: 1%;
+  left: 82%;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 25px;
+  opacity: 1;
+  text-align: left;
+  font-weight: bold;
+}
+
+.SingUp {
+  width: 231px;
+  height: 87px;
+  background: rgba(32, 18, 191, 0.11999999731779099);
+  opacity: 1;
+  position: absolute;
+  top: 62%;
+  left: 6%;
+  border: 1.9923665523529053px solid rgba(59, 55, 255, 1);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  overflow: hidden;
+}
+
+.SingUp2 {
+  width: 111px;
+  color: rgba(54, 50, 255, 1);
+  position: absolute;
+  top: 64.4%;
+  left: 8.4%;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 28px;
+}
+
+.telaleia1 {
+  width: 664px;
+  height: 869px;
+  background: linear-gradient(rgba(107, 115, 255, 1), rgba(0, 13, 255, 1));
+  opacity: 1;
+  position: absolute;
+  top: 1438px;
+  left: 47px;
+  border: 8px solid linear-gradient(rgba(100, 109, 255, 1), rgba(12, 24, 255, 1));
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+.telaleia2 {
+  width: 664px;
+  height: 869px;
+  background: linear-gradient(rgba(107, 115, 255, 1), rgba(0, 13, 255, 1));
+  opacity: 1;
+  position: absolute;
+  top: 1438px;
+  left: 751px;
+  border: 8px solid linear-gradient(rgba(100, 109, 255, 1), rgba(12, 24, 255, 1));
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+.telaleia3 {
+  width: 664px;
+  height: 869px;
+  background: linear-gradient(rgba(107, 115, 255, 1), rgba(0, 13, 255, 1));
+  opacity: 1;
+  position: absolute;
+  top: 1438px;
+  left: 1455px;
+  border: 8px solid linear-gradient(rgba(100, 109, 255, 1), rgba(12, 24, 255, 1));
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+.Graficos {
+  width: 597px;
+  height: 498px;
+  background: url("Graficos.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1468px;
+  left: 82px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+.codenot {
+  width: 597px;
+  height: 498px;
+  background: url("codenot.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1468px;
+  left: 784px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+.livro_python {
+  width: 597px;
+  height: 498px;
+  background: url("livro_python.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1468px;
+  left: 1488px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+.text_graficos {
+  width: 555px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 2000px;
+  left: 101px;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 37px;
+  opacity: 1;
+  text-align: left;
+}
+
+.bloco_graficos {
+  width: 270px;
+  height: 95px;
+  background: rgba(21, 33, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 2150px;
+  left: 101px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+
+.leia_mais_graficos {
+  width: 555px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 2170px;
+  left: 149px;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 37px;
+  opacity: 1;
+  text-align: left;
+}
+
+.text_codenot {
+  width: 555px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 2000px;
+  left: 791px;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 37px;
+  opacity: 1;
+  text-align: left;
+}
+
+.bloco_codenot {
+  width: 270px;
+  height: 95px;
+  background: rgba(21, 33, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 2150px;
+  left: 791px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+
+.leia_mais_codenot {
+  width: 555px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 2170px;
+  left: 839px;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 37px;
+  opacity: 1;
+  text-align: left;
+}
+
+.text_livro_python {
+  width: 555px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 2000px;
+  left: 1502px;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 37px;
+  opacity: 1;
+  text-align: left;
+}
+
+.bloco_livro_python {
+  width: 270px;
+  height: 95px;
+  background: rgba(21, 33, 255, 1);
+  opacity: 1;
+  position: absolute;
+  top: 2150px;
+  left: 1502px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+
+.leia_mais_livro_python {
+  width: 555px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 2170px;
+  left: 1550px;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 37px;
+  opacity: 1;
+  text-align: left;
+}
+
+.name {
+  color: #fff;
+}
+
+.instagram { 
+	width:49px;
+	height:49px;
+  position: absolute;
+  top: 2480px;
+  left: 50%;
+  overflow: hidden;
+}
+
+
+.linkedin {
+  width: 49px;
+  height: 49px;
+  opacity: 1;
+  position: absolute;
+  top: 2480px;
+  left: 54.1%;
+  overflow: hidden;
+}
+
+.Facebook {
+  width: 49px;
+  height: 49px;
+  opacity: 1;
+  position: relative;
+  top: 2480px;
+  left: 58%;
+  overflow: hidden;
+}
+
+.Teste {
+  background: rgba(1,7,22,1);
+  width: 60%;
+  height: 1091px;
+  opacity: 1;
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  opacity: 0.9;
+}
+
+.texto{
+  width: 60%;
+  height: 1036px;
+  opacity: 1;
+  position: absolute;
+  top: 3%;
+  left: 4%;
+}
+
+.white {
+  color: white;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 90px;
+}
+
+.blue {
+  color: blue;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 90px;
+}
+
+.green {
+  color: #DCFF78;
+  font-family: Inter;
+  font-weight: Semi Bold;
+  font-size: 90px;
+}
+
+.imagemSom { 
+  width: 100%;
+  height: 1100px;
+  opacity: 1;
+  position: absolute;
+  top: 3%;
+  left: 2%;
+}
+
+
+
+
+
+
