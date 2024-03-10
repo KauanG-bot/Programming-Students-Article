@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
     <link href="main.css" rel="stylesheet" />
     <title>Projeto</title>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -36,6 +37,32 @@
             <img src="Instagram.png" class="instagram">
             <img src="Linkedin.png" class="linkedin">
             <img src="Facebook.png" class="Facebook">
+
+
+            
+        <!-- pop-up -->
+    <button id="active">Login</button>
+    <div class="container-popup" id="container">
+            <div class="popup">
+            <button id="inative">&times;</button>
+            
+            <form action = "banco.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" name = "nome" required><br>
+    
+                <label for="usuario">Usuario:</label>
+                <input type="text" name = "usuario" required><br>
+    
+                <label for="nome">Email:</label>
+                <input type="text" name = "email" required><br>
+    
+                <label for="nome">Senha:</label>
+                <input type="password" name = "senha" required><br>
+    
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+    </div> 
             
     </div>
 </body>

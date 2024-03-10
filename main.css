@@ -404,3 +404,72 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button{
+  background-color: rgb(17, 255, 0);
+  color: white;
+  padding: 1rem;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-popup{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color:#3366cc;
+display: none;
+align-items: center;
+justify-content: center;
+}  
+
+.container-popup.active{
+  display: flex;
+}
+
+.popup{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px green;
+  position: relative;
+  width: 500px;
+
+}
+
+.popup button{
+
+  color: blueviolet;
+  font: 2.5rem;
+  top: 10px;
+  right: 10px;
+}
+
+
+
+
