@@ -10,7 +10,7 @@ body {
 
 .tela {
   width: 100%;
-  height: 270vh;
+  height: 245vh;
   background: rgba(8, 0, 44, 1);
   opacity: 1;
   position: absolute;
@@ -29,7 +29,12 @@ body {
   font-size: 25px;
   opacity: 1;
   text-align: left;
-  font-weight: medium 25;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.Home:hover {
+  color: rgba(54, 50, 255, 1);
+  font-weight: bold;
 }
 
 .Artigos {
@@ -39,9 +44,13 @@ body {
   left: 75%;
   font-family: Inter;
   font-size: 25px;
-  opacity: 1;
-  text-align: left;
-  font-weight: medium 25;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.Artigos:hover {
+  color: rgba(54, 50, 255, 1);
+  font-weight: bold;
 }
 
 .Sobre {
@@ -51,9 +60,13 @@ body {
   left: 82%;
   font-family: Inter;
   font-size: 25px;
-  opacity: 1;
-  text-align: left;
-  font-weight: Medium 25;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.Sobre:hover {
+  color: rgba(54, 50, 255, 1);
+  font-weight: bold;
 }
 
 .SingUp {
@@ -62,123 +75,67 @@ body {
   background: rgba(32, 18, 191, 0.11999999731779099);
   opacity: 1;
   position: absolute;
-  top: 45%;
+  top: 35%;
   left: 6%;
-  border: 1.9923665523529053px solid rgba(59, 55, 255, 1);
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
-  border-bottom-left-radius: 9px;
-  border-bottom-right-radius: 9px;
-  overflow: hidden;
-}
+  border: 1px solid rgba(59, 55, 255, 1);
+  border-radius: 9px;
 
-.SingUp2 {
-  width: 111px;
+  /* *Texto Sing UP */
   color: rgba(54, 50, 255, 1);
   position: absolute;
-  top: 47.4%;
-  left: 8.4%;
   font-family: Inter;
-  font-weight: Medium;
   font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-
-.telaleia1 {
-  width: 664px;
-  height: 869px;
-  background: linear-gradient(rgba(107, 115, 255, 1), rgba(0, 13, 255, 1));
-  opacity: 1;
-  position: absolute;
-  top: 1438px;
-  left: 47px;
-  border: 8px solid linear-gradient(rgba(100, 109, 255, 1), rgba(12, 24, 255, 1));
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  overflow: hidden;
+.SingUp:hover {
+  color: rgb(28, 26, 179);
+  font-weight: bold;
 }
-
-.telaleia2 {
-  width: 664px;
-  height: 869px;
-  background: linear-gradient(rgba(107, 115, 255, 1), rgba(0, 13, 255, 1));
-  opacity: 1;
-  position: absolute;
-  top: 1438px;
-  left: 751px;
-  border: 8px solid linear-gradient(rgba(100, 109, 255, 1), rgba(12, 24, 255, 1));
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  overflow: hidden;
-}
-
-.telaleia3 {
-  width: 664px;
-  height: 869px;
-  background: linear-gradient(rgba(107, 115, 255, 1), rgba(0, 13, 255, 1));
-  opacity: 1;
-  position: absolute;
-  top: 1438px;
-  left: 1455px;
-  border: 8px solid linear-gradient(rgba(100, 109, 255, 1), rgba(12, 24, 255, 1));
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  overflow: hidden;
-}
-
 
 .Graficos {
-  width: 597px;
-  height: 498px;
+  width: 90%; 
+  max-width: 550px;
+  height: auto;
+  max-height: 500px;
   opacity: 1;
   position: absolute;
   top: 1468px;
   left: 3%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  overflow: hidden;
+  border-radius: 20px;
 }
 
 .codenot {
-  width: 597px;
-  height: 498px;
+  width: 90%; 
+  max-width: 550px;
+  height: auto;
+  max-height: 500px;
   opacity: 1;
   position: absolute;
   top: 1468px;
-  left: 33%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  overflow: hidden;
+  left: 35%;
+  border-radius: 20px;
 }
 
 .livro_python {
-  width: 597px;
-  height: 498px;
+  width: 90%; 
+  max-width: 550px;
+  height: auto;
+  max-height: 500px;
   opacity: 1;
   position: absolute;
   top: 1468px;
-  left: 63%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  overflow: hidden;
+  left: 67%;
+  border-radius: 20px;
 }
 
 .text_graficos {
   width: 555px;
   color: rgba(255, 255, 255, 1);
   position: absolute;
-  top: 2000px;
+  top: 1850px;
   left: 4%;
   font-family: Inter;
   font-weight: Semi Bold;
@@ -190,37 +147,35 @@ body {
 .bloco_graficos {
   width: 270px;
   height: 95px;
-  background: rgba(21, 33, 255, 1);
+  background: blue;
   opacity: 1;
   position: absolute;
-  top: 2150px;
+  top: 2000px;
   left: 4%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
+  border-radius: 10px;
 
-}
-
-.leia_mais_graficos {
-  width: 555px;
-  color: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 2170px;
-  left: 6%;
-  font-family: Inter;
+  /* *Leia Mais Graficos*/
+  display: flex;
+  font-family: Calibri;
   font-size: 37px;
-  text-align: left;
-  opacity: 1;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
 }
+.bloco_graficos:hover {
+  border-radius: 20px;
+}
+
+
+
 
 .text_codenot {
   width: 555px;
   color: rgba(255, 255, 255, 1);
   position: absolute;
-  top: 2000px;
-  left: 33%;
+  top: 1850px;
+  left: 35%;
   font-family: Inter;
   font-weight: Semi Bold;
   font-size: 37px;
@@ -230,38 +185,34 @@ body {
 .bloco_codenot {
   width: 270px;
   height: 95px;
-  background: rgba(21, 33, 255, 1);
+  background: blue;
   opacity: 1;
   position: absolute;
-  top: 2150px;
-  left: 33%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
+  top: 2000px;
+  left: 35%;
+  border-radius: 10px;
+
+  /* *Leia Mais Codenot*/
+  display: flex;
+  font-family: Calibri;
+  font-size: 37px;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
 }
 
-.leia_mais_codenot {
-  width: 555px;
-  color: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 2170px;
-  left: 35%;
-  font-family: Inter;
-  font-size: 37px;
-  text-align: left;
-  opacity: 1;
+.bloco_codenot:hover {
+  border-radius: 20px;
 }
 
 .text_livro_python {
   width: 555px;
   color: rgba(255, 255, 255, 1);
   position: absolute;
-  top: 2000px;
-  left: 63%;
+  top: 1850px;
+  left: 67%;
   font-family: Inter;
-  font-weight: Semi Bold;
   font-size: 37px;
   opacity: 1;
 }
@@ -269,28 +220,25 @@ body {
 .bloco_livro_python {
   width: 270px;
   height: 95px;
-  background: rgba(21, 33, 255, 1);
+  background: blue;
   opacity: 1;
   position: absolute;
-  top: 2150px;
-  left: 63%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
+  top: 2000px;
+  left: 67%;
+  border-radius: 10px;
+
+  /* *Leia Mais Livro Python*/
+  display: flex;
+  font-family:  Calibri;
+  font-size: 37px;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
 }
 
-.leia_mais_livro_python {
-  width: 555px;
-  color: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 2170px;
-  left: 65%;
-  font-family: Inter;
-  font-size: 37px;
-  text-align: left;
-  opacity: 1;
+.bloco_livro_python:hover {
+  border-radius: 20px;
 }
 
 
@@ -298,20 +246,23 @@ body {
 	width: 30px;
   height: 30px;
   position: absolute;
-  top: 10%;
-  left: 50%;
+  top: 30%;
+  left: 47%;
   overflow: hidden;
+  transform: translateX(-50%) translateY(-60%);
+  cursor: pointer;
 }
-
 
 .linkedin {
   width: 30px;
   height: 30px;
   opacity: 1;
   position: absolute;
-  top: 10%;
-  left: 54.1%;
+  top: 30%;
+  left: 50%;
   overflow: hidden;
+  transform: translateX(-50%) translateY(-60%);
+  cursor: pointer;
 }
 
 .Facebook {
@@ -319,9 +270,11 @@ body {
   height: 30px;
   opacity: 1;
   position: absolute;
-  top: 10%;
-  left: 58%;
+  top: 30%;
+  left: 53%;
   overflow: hidden;
+  transform: translateX(-50%) translateY(-60%);
+  cursor: pointer;
 }
 
 .bloco {
@@ -339,7 +292,7 @@ body {
   height: 1036px;
   opacity: 1;
   position: absolute;
-  top: 20%;
+  top: 18%;
   left: 4%;
 }
 
@@ -376,7 +329,7 @@ body {
 .account {
   color: white;
   position: absolute;
-  top: 30.4%;
+  top: 22.4%;
   left: 1%;
   font-family: Inter;
   text-align: left;
@@ -387,26 +340,26 @@ body {
   color: #DCFF78;
   font-family: Inter;
   font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+  background: none;
+  border: none;
+  top: 27.7%;
+  left: 18%;
+  position: absolute;
+}
+.green2:hover {
+  color: rgba(54, 50, 255, 1);
+
 }
 
 .Cabecalho {
   background: #030011;
   width: 100%;
-  height: 92px;
+  height: 80px;
   top: 1%;
 }
 
-.naosei {
-  background: rgba(97,85,255,0.18000000715255737);
-  width: 10%;
-  height: 60px;
-  top: 20%;
-  position: absolute;
-  top: 10.4%;
-  left: 5%;
-  border-radius: 10px;
-  box-shadow: 0 0 0 5px #6156FF;
-}
 
 .Kode {
   color: rgba(95, 159, 255, 1);
@@ -456,3 +409,58 @@ body {
   left: 4%;
   opacity: 1;
 }
+
+.conheca {
+    color: #D7D9FF;
+    font-family: inter;
+    top: 52%;
+    left: 2%;
+    font-size: 50px;
+    position: absolute;
+  }
+.aprenda {
+  color: #9ca1ff;
+  font-family: Inter;
+  top: 54.4%;
+  left: 3%;
+  font-size: 20px;
+  position:absolute;
+}
+
+
+
+.container-popup{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+display: none;
+align-items: center;
+justify-content: center;
+}
+
+.container-popup.active{
+  display: flex;
+}
+
+.popup{
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px green;
+  position: relative;
+
+
+  width: 500px;
+  height: 300px;
+
+}
+
+.popup button{
+
+  color: blueviolet;
+  font: 2.5rem;
+  top: 10px;
+  right: 10px;
+}
+
