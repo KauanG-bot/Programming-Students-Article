@@ -3,43 +3,68 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-    <link href="main.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />   
+    <script src="script.js" defer></script>
     <title>Projeto</title>
 </head>
 
 <body>
     <div class="tela">
-
+        
+    <!-- !Cabeçalho inicial com informações de inicio, pagina de artigos e sobre nós-->
         <div class="Cabecalho">
             <span class="Home">Home</span>
             <span class="Artigos">Artigos</span>
-            <span class="Sobre">Sobre nós</span>
+            <span class="Sobre">Sobre n&oacute;s</span>
             <p class="Kode">KodeStudy</p>
             <img src="Imagens/image.png" class="Kodeimage">
         </div>
 
+    <!-- !Imagem de fundo do bloco-->
         <img src="Imagens/imagemSom.png" class="imagemSom">
-        <div class="bloco"> </div>
-        <div class="naosei"></div>
+
+    <!-- !Bloco preto com a classe texto-->
+        <div class="bloco"></div>
+
+    <!--!Texto do bloco, com sing up  e se a pessoa tem conta-->
         <div class="texto">
-            <p class="white">Develop your <span class="blue">skills</span> <br> with <span class="green">our</span>
-                system</p>
-            <div class="SingUp"></div><span class="SingUp2">Sign up</span>
-            <p class="account">Do you already have an account? <span class="green2">Login</span>
+            <p class="white">Develop your <span class="blue">skills</span>
+                 <br> 
+                 with 
+                 <span class="green">our</span>
+                 system</p>
+            <div class="SingUp"><span>Sign up</span></div>
+            <p class="account">Do you already have an account?
         </div>
 
-        <img class="Graficos" src="Imagens/Graficos.png">
-        <span class="text_graficos">Data Science: Como se tornar um Cientista de Dados em 2024</span>
-        <div class="bloco_graficos"></div><span class="leia_mais_graficos">Leia mais</span>
+        <p class="aprenda">Aprenda sobre tecnologia e compartilhe suas ideias</p>
+        <p class="conheca">Conhe&ccedil;a mais sobre a KodeStudy</p>
 
-        <img class="codenot" src="Imagens/codenot.png">
-        <span class="text_codenot">Data Science: Como se tornar um Cientista de Dados em 2024</span>
-        <div class="bloco_codenot"></div><span class="leia_mais_codenot">Leia mais</span>
+        <!--*imagens no final da pagina para ver mais etc essa é a primeira que tem-->
 
-        <img class="livro_python" src="Imagens/livro_python.png">
-        <span class="text_livro_python">Data Science: Como se tornar um Cientista de Dados em 2024</span>
-        <div class="bloco_livro_python"></div><span class="leia_mais_livro_python">Leia mais</span>
+            <div class="graficoscontainer">
+                <img class="Graficos" src="Imagens/Graficos.png">
+                <span class="text_graficos">Data Science: Como se tornar um Cientista de Dados em 2024</span>
+                <div class="bloco_graficos"><span>Leia mais</span></div>
+            </div>
 
+            <!--*imagens no final da pagina para ver mais etc essa é a segunda com imagem de um notebook e codigos-->
+            
+            <div class="codenotcontainer">
+                <img class="codenot" src="Imagens/codenot.png">
+                <span class="text_codenot">Data Science: Como se tornar um Cientista de Dados em 2024</span>
+                <div class="bloco_codenot"><span>Leia mais</span></div>
+            </div>
+
+            <!--*imagens no final da pagina para ver mais etc essa é a terceira que tem com um livro de python-->
+
+            <div class="livro_pythoncontainer">
+                <img class="livro_python" src="Imagens/livro_python.png">
+                <span class="text_livro_python">Data Science: Como se tornar um Cientista de Dados em 2024</span>
+                <div class="bloco_livro_python"><span>Leia mais</span></div>
+            </div>
+
+        <!--! Cabeçalho final com redes sociais-->
         <div class="FinalCabecalho">
             <img src="Imagens/Instagram.png" class="instagram">
             <img src="Imagens/Linkedin.png" class="linkedin">
@@ -47,7 +72,34 @@
             <img src="Imagens/image.png" class="Kodeimage2" >
             <p class="Kode2">KodeStudy</p>
         </div>
-    </div>
+        <!--?começo pelo botão de login ?  -->
+        <button id="active" class="green2">Login</button>
+        <div class="container-popup" id="container">
+                <div class="popup">
+                    <button id="inative"><img src="imagens/FecharTela.png" 
+                        style="width: 30px; height: 30px; align-items: left; border: none; position: absolute; left: 93%; top: 5px;">
+                    </button>
+    
+                <form action = "banco.php" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name = "nome" required><br>
+    
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" name = "usuario" required><br>
+    
+                    <label for="nome">Email:</label>
+                    <input type="text" name = "email" required><br>
+    
+                    <label for="nome">Senha:</label>
+                    <input type="password" name = "senha" required><br>
+    
+                    <input type="submit" value="Cadastrar">
+                </form>
+            </div>
+        </div>
+    
+        </div>
+
 </body>
 
 </html>
