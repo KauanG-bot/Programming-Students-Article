@@ -69,7 +69,7 @@ body {
   font-weight: bold;
 }
 
-.SingUp {
+.SingUp2 {
   width: 231px;
   height: 87px;
   background: rgba(32, 18, 191, 0.11999999731779099);
@@ -90,7 +90,7 @@ body {
   align-items: center;
   cursor: pointer;
 }
-.SingUp:hover {
+.SingUp2:hover {
   color: rgb(28, 26, 179);
   font-weight: bold;
 }
@@ -333,7 +333,7 @@ body {
   left: 1%;
   font-family: Inter;
   text-align: left;
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .green2{
@@ -344,8 +344,8 @@ body {
   cursor: pointer;
   background: none;
   border: none;
-  top: 27.7%;
-  left: 18%;
+  top: 0%;
+  left: 102%;
   position: absolute;
 }
 .green2:hover {
