@@ -1,18 +1,25 @@
-//Logica pop-up//
-const active = document.getElementById("active");
-const inative = document.getElementById("inative");
-const closeButton = document.getElementById("closeButton");
-const container = document.getElementById("container");
+// Logica pop-up de cadastro
+const activeCadastro = document.getElementById("active-cadastro");
+const containerCadastro = document.getElementById("container-cadastro");
+const inativeCadastro = containerCadastro.querySelector("#inative");
 
-active.addEventListener("click", () =>{
-    container.classList.add("active");
-})
-
-inative.addEventListener("click" , () =>{
-    container.classList.remove("active");
+activeCadastro.addEventListener("click", () =>{
+    containerCadastro.classList.add("active");
 });
 
-closeButton.addEventListener("click", () => {
-    container.classList.remove("active");
+inativeCadastro.addEventListener("click" , () =>{
+    containerCadastro.classList.remove("active");
 });
 
+// Logica pop-up de login
+const activeLogin = document.getElementById("active-login");
+const containerLogin = document.getElementById("container-login");
+const inativeLogin = containerLogin.querySelector("#inative");
+
+activeLogin.addEventListener("click", () =>{
+    containerLogin.classList.add("active");
+});
+
+inativeLogin.addEventListener("click" , () =>{
+    containerLogin.classList.remove("active");
+});
