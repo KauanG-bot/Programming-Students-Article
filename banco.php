@@ -4,7 +4,7 @@
     $nome = $_POST["nome"];
     $usuario = $_POST["usuario"];
     $email = $_POST["email"];
-    $senha= password_hash($_POST["senha"],PASSWORD_DEFAULT);
+    $senha= ($_POST["senha"]);
   
 
     $dbBanco = 'localhost';
@@ -22,11 +22,11 @@ $nome = $coon->real_escape_string($nome);
 $usuario = $coon->real_escape_string($usuario);
 $email = $coon->real_escape_string($email);
 
-$query = "INSERT INTO usuario (nome, usuario, email, senha) VALUES ('$nome', '$usuario', '$email', '$senha')";
+$query = "INSERT INTO usuario (Nome, Usuario, Email, Senha) VALUES ('$nome', '$usuario', '$email', '$senha')";
 
 if($coon->query($query) === true){
-    //mudar o local do logi Aqui!
-    header("Location: login.html");
+    //mudar o local do login Aqui!
+    header("Location: teste.html");
 }
 else{
     echo "Falha ao cadastrar" .$coon->error; 

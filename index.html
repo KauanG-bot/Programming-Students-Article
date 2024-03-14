@@ -33,7 +33,7 @@
                  with 
                  <span class="green">our</span>
                  system</p>
-            <div class="SingUp"><span>Sign up</span></div>
+            <div class="SingUp"><span class="SingUp2"></span></div>
             <p class="account">Do you already have an account?
         </div>
 
@@ -73,14 +73,14 @@
             <p class="Kode2">KodeStudy</p>
         </div>
         <!--?começo pelo botão de login ?  -->
-        <button id="active" class="green2">Login</button>
-        <div class="container-popup" id="container">
+        <button id="active-cadastro" class="SingUp">Cadastrar</button>
+        <div class="container-popup" id="container-cadastro">
                 <div class="popup">
                     <button id="inative"><img src="imagens/FecharTela.png" 
                         style="width: 30px; height: 30px; align-items: left; border: none; position: absolute; left: 93%; top: 5px;">
-                    </button>
-    
-                <form action = "banco.php" method="post">
+                    </button>         
+                
+                    <form action = "banco.php" method="post">
                     <label for="nome">Nome:</label>
                     <input type="text" name = "nome" required><br>
     
@@ -97,6 +97,30 @@
                 </form>
             </div>
         </div>
+
+
+
+        <button id="active-login" class="green2">Login</button>
+        <div class="container-popup" id="container-login">
+                <div class="popup">
+                    <button id="inative"><img src="imagens/FecharTela.png" 
+                        style="width: 30px; height: 30px; align-items: left; border: none; position: absolute; left: 93%; top: 5px;">
+                    </button>
+    
+                    <form action="login.php" method="post">
+                        <label for="username">Nome do Usuario:</label>
+                        <input type="text" id="username" name="username" required><br>
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required><br>
+                        <button type="submit">Entrar</button>
+                    </form>
+                
+            </div>
+        </div>
+
+
+
+           
     
         </div>
 
