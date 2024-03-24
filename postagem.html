@@ -1,0 +1,23 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Administração de Postagens</title>
+    </head>
+    <body>
+        <h1>Administração de Postagens</h1>
+        
+        
+        <form action="postagem.php" method="post" enctype="multipart/form-data">
+            <label for="titulo">Título:</label><br>
+            <input type="text" id="titulo" name="titulo"><br>
+            <label for="texto">Texto:</label><br>
+            <textarea id="texto" name="texto"></textarea><br>
+            <label for="imagem">Imagem:</label><br>
+            <input type="file" id="imagem" name="imagem"><br>
+            <input type="submit" value="Publicar">
+        </form>
+
+    </body>
+    </html>
