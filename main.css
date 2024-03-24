@@ -5,47 +5,64 @@
 }
 
 body {
+  margin: 0;
   font-size: 14px;
+  font-family: "poppins", sans-serif;
 }
 
 .tela {
   width: 100%;
-  height: 245vh;
+  height: 180vh;
   background: rgba(8, 0, 44, 1);
   opacity: 1;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  position: relative;
   overflow: hidden;
+  padding: 0;
 }
 
+.Cabecalho {
+  background: #030011;
+  width: 100%;
+  max-height: 55px;
+  height: 3%; 
+  top: 1%;
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
 
 .Home {
   color: rgba(95, 159, 255, 1);
   position: absolute;
-  top: 1%;
+  top: 50%; 
   left: 50%;
   font-family: Inter;
-  font-size: 25px;
+  font-size: 1.5rem; 
   opacity: 1;
   text-align: left;
   cursor: pointer;
   text-decoration: underline;
+  transform: translate(-50%, -50%); 
 }
-.Home:hover {
-  color: rgba(54, 50, 255, 1);
-  font-weight: bold;
+
+@media screen and (max-height: 80px) {
+  .Home {
+    font-size: 1rem;
+  }
 }
 
 .Artigos {
   color: rgba(95, 159, 255, 1);
   position: absolute;
-  top: 1%;
+  top: 50%; 
   left: 75%;
   font-family: Inter;
-  font-size: 25px;
+  font-size: 1.5rem; 
   cursor: pointer;
   text-decoration: underline;
+  transform: translate(-50%, -50%); 
 }
 
 .Artigos:hover {
@@ -53,15 +70,22 @@ body {
   font-weight: bold;
 }
 
+@media screen and (max-height: 80px) {
+  .Artigos {
+    font-size: 1rem; 
+  }
+}
+
 .Sobre {
   color: rgba(95, 159, 255, 1);
   position: absolute;
-  top: 1%;
+  top: 50%; 
   left: 82%;
   font-family: Inter;
-  font-size: 25px;
+  font-size: 1.5rem; 
   cursor: pointer;
   text-decoration: underline;
+  transform: translate(-50%, -50%); 
 }
 
 .Sobre:hover {
@@ -69,18 +93,52 @@ body {
   font-weight: bold;
 }
 
+@media screen and (max-height: 80px) {
+  .Sobre {
+    font-size: 1rem; 
+  }
+}
+
+.Kode {
+  color: rgba(95, 159, 255, 1);
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  font-family: Inter;
+  font-size: 1.5rem;
+  opacity: 1;
+  text-align: left;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.Kodeimage {
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-height: 80px) {
+  .Kode,
+  .Kodeimage {
+    font-size: 1rem;
+    width: 10px;
+  }
+}
+
 .SingUp2 {
   width: 231px;
-  height: 87px;
+  height: 60px;
   background: rgba(32, 18, 191, 0.11999999731779099);
   opacity: 1;
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 6%;
   border: 1px solid rgba(59, 55, 255, 1);
   border-radius: 9px;
-
-  /* *Texto Sing UP */
   color: rgba(54, 50, 255, 1);
   position: absolute;
   font-family: Inter;
@@ -89,164 +147,98 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  max-width: 200px;
 }
+
 .SingUp2:hover {
   color: rgb(28, 26, 179);
   font-weight: bold;
 }
 
-.Graficos {
-  width: 90%; 
-  max-width: 550px;
-  height: auto;
-  max-height: 500px;
-  opacity: 1;
-  position: absolute;
-  top: 1468px;
-  left: 3%;
-  border-radius: 20px;
-}
 
-.codenot {
-  width: 90%; 
-  max-width: 550px;
-  height: auto;
-  max-height: 500px;
-  opacity: 1;
-  position: absolute;
-  top: 1468px;
-  left: 35%;
-  border-radius: 20px;
-}
-
-.livro_python {
-  width: 90%; 
-  max-width: 550px;
-  height: auto;
-  max-height: 500px;
-  opacity: 1;
-  position: absolute;
-  top: 1468px;
-  left: 67%;
-  border-radius: 20px;
-}
-
-.text_graficos {
-  width: 555px;
-  color: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 1850px;
-  left: 4%;
-  font-family: Inter;
-  font-weight: Semi Bold;
-  font-size: 37px;
-  opacity: 1;
-  text-align: left;
-}
-
-.bloco_graficos {
-  width: 270px;
-  height: 95px;
-  background: blue;
-  opacity: 1;
-  position: absolute;
-  top: 2000px;
-  left: 4%;
+.container {
+  width: 99%;
+  max-width: 2000px;
+  height: 70.2vh;
+  max-height: 90vh;
+  padding: 10px;
+  top: 50%;
   border-radius: 10px;
+  opacity: 1;
+  position: absolute;
+  overflow: hidden;
+  border: blue 1px solid;
+}
 
-  /* *Leia Mais Graficos*/
+.graficoscontainer, .codenotcontainer, .livro_pythoncontainer {
+  margin-right: 70px; 
+  float: left;
+  left: 0%;
+  top: 20%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.Graficos, .codenot, .livro_python {
+  max-width: 500px; 
+  width: 100%;
+  height: auto; 
+  border: 1px solid rgba(59, 55, 255, 1);
+  border-radius: 10px;
+  background: rgba(32, 18, 191, 0.11999999731779099); 
+  opacity: 1; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.text_graficos, .text_codenot, .text_livro_python {
+  font-family: Inter;
+  font-size: 20px; 
+  color: rgba(255, 255, 255, 1);
   display: flex;
-  font-family: Calibri;
-  font-size: 37px;
-  align-items: center;
+  flex-direction: column; 
+  margin-top: 10px; 
+  word-wrap: break-word;
+}
+
+.bloco_graficos, .bloco_codenot, .bloco_livro_python {
+  border-radius: 10px;
+  display: flex; 
+  text-align: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 1);
-  cursor: pointer;
-}
-.bloco_graficos:hover {
-  border-radius: 20px;
-}
-
-
-
-
-.text_codenot {
-  width: 555px;
-  color: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 1850px;
-  left: 35%;
-  font-family: Inter;
-  font-weight: Semi Bold;
-  font-size: 37px;
-  opacity: 1;
-}
-
-.bloco_codenot {
-  width: 270px;
-  height: 95px;
-  background: blue;
-  opacity: 1;
-  position: absolute;
-  top: 2000px;
-  left: 35%;
-  border-radius: 10px;
-
-  /* *Leia Mais Codenot*/
-  display: flex;
-  font-family: Calibri;
-  font-size: 37px;
   align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 1);
   cursor: pointer;
-}
-
-.bloco_codenot:hover {
-  border-radius: 20px;
-}
-
-.text_livro_python {
-  width: 555px;
-  color: rgba(255, 255, 255, 1);
-  position: absolute;
-  top: 1850px;
-  left: 67%;
-  font-family: Inter;
-  font-size: 37px;
-  opacity: 1;
-}
-
-.bloco_livro_python {
+  overflow: hidden; 
+  color: white;
   width: 270px;
-  height: 95px;
+  height: 70px;
   background: blue;
   opacity: 1;
-  position: absolute;
-  top: 2000px;
-  left: 67%;
-  border-radius: 10px;
+  position: relative; 
+  margin-right: 20px; 
+  margin-bottom: 20px;
+  top: 15px;
 
-  /* *Leia Mais Livro Python*/
-  display: flex;
+  /*TEXT Leia Mais*/
   font-family:  Calibri;
   font-size: 37px;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 1);
-  cursor: pointer;
 }
 
-.bloco_livro_python:hover {
+
+
+.bloco_graficos:hover, .bloco_codenot:hover, .bloco_livro_python:hover {
   border-radius: 20px;
+  background: rgba(32, 18, 191, 0.11999999731779099);
 }
 
 
-.instagram { 
-	width: 30px;
+.instagram {
+  width: 30px;
   height: 30px;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 47%;
   overflow: hidden;
   transform: translateX(-50%) translateY(-60%);
@@ -258,7 +250,7 @@ body {
   height: 30px;
   opacity: 1;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   overflow: hidden;
   transform: translateX(-50%) translateY(-60%);
@@ -270,7 +262,7 @@ body {
   height: 30px;
   opacity: 1;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 53%;
   overflow: hidden;
   transform: translateX(-50%) translateY(-60%);
@@ -278,22 +270,23 @@ body {
 }
 
 .bloco {
-  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
   width: 60%;
-  height: 1091px;
+  height: 80vh; 
   position: absolute;
   top: 5.4%;
-  left: 2%;
-  opacity: 0.6;
+  left: 2%; 
+  overflow: hidden;
 }
 
-.texto{
-  width: 60%;
+.texto {
+  max-width: 100%;
   height: 1036px;
   opacity: 1;
-  position: absolute;
-  top: 18%;
+  position: relative;
+  top: 10%;
   left: 4%;
+  overflow: hidden;
 }
 
 .white {
@@ -301,25 +294,24 @@ body {
   font-family: Inter;
   font-weight: Semi Bold;
   font-size: 90px;
+  max-width: 800px;
+  opacity: 1;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
 }
 
 .blue {
   color: blue;
-  font-family: Inter;
-  font-weight: Semi Bold;
-  font-size: 90px;
 }
 
 .green {
   color: #DCFF78;
-  font-family: Inter;
-  font-weight: Semi Bold;
-  font-size: 90px;
 }
 
-.imagemSom { 
+.imagemSom {
   width: 100%;
-  height: 1100px;
+  height: 80vh; 
   opacity: 1;
   position: absolute;
   top: 5%;
@@ -336,7 +328,7 @@ body {
   font-size: 16px;
 }
 
-.green2{
+.green2 {
   color: #DCFF78;
   font-family: Inter;
   font-size: 16px;
@@ -348,131 +340,106 @@ body {
   left: 102%;
   position: absolute;
 }
+
 .green2:hover {
   color: rgba(54, 50, 255, 1);
 
 }
 
-.Cabecalho {
-  background: #030011;
-  width: 100%;
-  height: 80px;
-  top: 1%;
-}
-
-
-.Kode {
-  color: rgba(95, 159, 255, 1);
-  position: absolute;
-  top: 1%;
-  left: 7%;
-  font-family: Inter;
-  font-size: 25px;
-  opacity: 1;
-  text-align: left;
-  font-weight: medium 25;
-}
-
-.Kodeimage {
-  width: 30px;
-  position: absolute;
-  top: 1%;
-  left: 4%;
-  opacity: 1;
-}
-
-
 .FinalCabecalho {
   background: #030011;
   width: 100%;
-  height: 92px;
-  top: 98%;
-  position: absolute;
+  max-height: 55px;
+  height: 3%; 
+  top: 93%;
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 .Kode2 {
   color: rgba(95, 159, 255, 1);
   position: absolute;
-  top: 8%;
-  left: 7%;
+  top: 50%;
+  left: 10%;
   font-family: Inter;
-  font-size: 25px;
+  font-size: 1.5rem;
   opacity: 1;
   text-align: left;
-  font-weight: medium 25;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
 }
 
 .Kodeimage2 {
-  width: 30px;
+  width: 40px;
   position: absolute;
-  top: 8%;
-  left: 4%;
+  top: 50%;
+  left: 5%;
   opacity: 1;
+  transform: translate(-50%, -50%);
 }
 
 .conheca {
-    color: #D7D9FF;
-    font-family: inter;
-    top: 52%;
-    left: 2%;
-    font-size: 50px;
-    position: absolute;
-  }
+  color: #D7D9FF;
+  font-family: inter;
+  top: 1%;
+  left: 2%;
+  font-size: 50px;
+  position: absolute;
+  opacity: 1;
+}
+
 .aprenda {
   color: #9ca1ff;
   font-family: Inter;
-  top: 54.4%;
+  top: 10%;
   left: 3%;
   font-size: 20px;
-  position:absolute;
+  position: absolute;
+  opacity: 1;
 }
 
 
 
-.container-popup{
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-display: none;
-align-items: center;
-justify-content: center;
+.container-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
 
-.container-popup.active{
+.container-popup.active {
   display: flex;
 }
 
-.popup{
+.popup {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  box-shadow: 2px 2px 5px green;
   position: relative;
-
-
   width: 500px;
   height: 300px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  background-color: transparent;
+  color: #fff;
 }
 
-.popup button{
+.popup button {
 
-  color: blueviolet;
   font: 2.5rem;
   top: 10px;
   right: 10px;
 }
 
-
-
-
-
-
-
-
-
-.green2Login{
+.green2Login {
   color: #DCFF78;
   font-family: Inter;
   font-size: 16px;
@@ -484,12 +451,13 @@ justify-content: center;
   left: 18%;
   position: absolute;
 }
+
 .green2Login:hover {
   color: rgba(54, 50, 255, 1);
 
 }
 
-.container-popupLogin{
+.container-popupLogin {
   position: fixed;
   top: 0;
   left: 0;
@@ -498,29 +466,149 @@ justify-content: center;
   display: none;
   align-items: center;
   justify-content: center;
-  }
-  
-  .container-popupLogin.active{
-    display: flex;
-  }
-  
-  .popupLogin{
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px green;
-    position: relative;
-  
-  
-    width: 500px;
-    height: 300px;
-  
-  }
-  
-  .popupLogin button{
-  
-    color: blueviolet;
-    font: 2.5rem;
-    top: 10px;
-    right: 10px;
-  }
-  
+}
+
+.container-popupLogin.active {
+  display: flex;
+}
+
+.popupLogin {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  position: relative;
+  width: 500px;
+  height: 300px;
+
+}
+
+.popupLogin button {
+
+  color: blueviolet;
+  font: 2.5rem;
+  top: 10px;
+  right: 10px;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+
+}
+
+.test input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.test input::placeholder {
+  color: #fff;
+}
+
+.test i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.Buscar {
+  width: 420px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.Buscar h1 {
+  font-size: 36px;
+  text-align: center;
+
+}
+
+.Buscar .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: rgba(54, 50, 255, 1);
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.Buscar .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: rgba(54, 50, 255, 1);
+  color: white;
+}
+
+.Buscar .register-link {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-link p a {
+  color: rgba(54, 50, 255, 1);
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+ .btn2{
+  border: none;
+  outline: none;
+  color: red;
+  position: relative;
+  cursor: pointer;
+  position: fixed;
+  top: 1;
+  left: 20;
+  font-size: 36px;
+  background: transparent;
+}
+

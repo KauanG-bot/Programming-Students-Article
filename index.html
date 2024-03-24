@@ -3,15 +3,16 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-    <link href="main.css" rel="stylesheet" />   
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="main.css" rel="stylesheet" />
     <script src="script.js" defer></script>
     <title>Projeto</title>
 </head>
 
 <body>
     <div class="tela">
-        
-    <!-- !Cabeçalho inicial com informações de inicio, pagina de artigos e sobre nós-->
+
+        <!-- !Cabeçalho inicial com informações de inicio, pagina de artigos e sobre nós-->
         <div class="Cabecalho">
             <span class="Home">Home</span>
             <span class="Artigos">Artigos</span>
@@ -20,76 +21,93 @@
             <img src="Imagens/image.png" class="Kodeimage">
         </div>
 
-    <!-- !Imagem de fundo do bloco-->
+        <!-- !Imagem de fundo do bloco-->
         <img src="Imagens/imagemSom.png" class="imagemSom">
 
-    <!-- !Bloco preto com a classe texto-->
-        <div class="bloco"></div>
-
-    <!--!Texto do bloco, com sing up  e se a pessoa tem conta-->
+        <!-- !Bloco preto com a classe texto-->
+        
+        <div class="bloco">
+        <!--!Texto do bloco, com sing up  e se a pessoa tem conta-->
         <div class="texto">
-            <p class="white">Develop your <span class="blue">skills</span> <br> with <span class="green">our</span>system</p>
-            <button id="active-cadastro"class="SingUp2">Cadastrar</button>
-            <p class="account">Do you already have an account? <button id="active-login" class="green2">Login</button></p>
-            
-        </div>
+            <p class="white">Develop your <span class="blue">skills</span> <br> with <span
+                    class="green">our</span>system</p>
+            <button id="active-cadastro" class="SingUp2">Sing-Up</button>
+            <p class="account">Do you already have an account? <button id="active-login" class="green2">Login</button>
+            </p>
 
-        <p class="aprenda">Aprenda sobre tecnologia e compartilhe suas ideias</p>
-        <p class="conheca">Conhe&ccedil;a mais sobre a KodeStudy</p>
+        </div>
+    </div>
 
         <!--*imagens no final da pagina para ver mais etc essa é a primeira que tem-->
+<div class="container">
+    <p class="aprenda">Aprenda sobre tecnologia e compartilhe suas ideias</p>
+    <p class="conheca">Conhe&ccedil;a mais sobre a KodeStudy</p>
+        <div class="graficoscontainer">
+            <img class="Graficos" src="Imagens/Graficos.png">
+            <span class="text_graficos">Data Science: Como se tornar um  <br>Cientista de Dados em 2024</span>
+            <div  class="bloco_graficos"><span>Leia mais</span></div>
+        </div>
 
-            <div class="graficoscontainer">
-                <img class="Graficos" src="Imagens/Graficos.png">
-                <span class="text_graficos">Data Science: Como se tornar um Cientista de Dados em 2024</span>
-                <div class="bloco_graficos"><span>Leia mais</span></div>
-            </div>
+        <!--*imagens no final da pagina para ver mais etc essa é a segunda com imagem de um notebook e codigos-->
 
-            <!--*imagens no final da pagina para ver mais etc essa é a segunda com imagem de um notebook e codigos-->
-            
-            <div class="codenotcontainer">
-                <img class="codenot" src="Imagens/codenot.png">
-                <span class="text_codenot">Data Science: Como se tornar um Cientista de Dados em 2024</span>
-                <div class="bloco_codenot"><span>Leia mais</span></div>
-            </div>
+        <div class="codenotcontainer">
+            <img class="codenot" src="Imagens/codenot.png">
+            <span class="text_codenot">Data Science: Como se tornar um <br> Cientista de Dados em 2024</span>
+            <div  class="bloco_codenot"><span>Leia mais</span></div>
+        </div>
 
-            <!--*imagens no final da pagina para ver mais etc essa é a terceira que tem com um livro de python-->
+        <!--*imagens no final da pagina para ver mais etc essa é a terceira que tem com um livro de python-->
 
-            <div class="livro_pythoncontainer">
-                <img class="livro_python" src="Imagens/livro_python.png">
-                <span class="text_livro_python">Data Science: Como se tornar um Cientista de Dados em 2024</span>
-                <div class="bloco_livro_python"><span>Leia mais</span></div>
-            </div>
-
+        <div class="livro_pythoncontainer">
+            <img class="livro_python" src="Imagens/livro_python.png">
+            <span class="text_livro_python">Data Science: Como se tornar um <br> Cientista de Dados em 2024</span>
+            <div  class="bloco_livro_python"><span>Leia Mais</span></div>
+        </div>
+        
+    </div>
         <!--! Cabeçalho final com redes sociais-->
         <div class="FinalCabecalho">
             <img src="Imagens/Instagram.png" class="instagram">
             <img src="Imagens/Linkedin.png" class="linkedin">
             <img src="Imagens/Facebook.png" class="Facebook">
-            <img src="Imagens/image.png" class="Kodeimage2" >
+            <img src="Imagens/image.png" class="Kodeimage2">
             <p class="Kode2">KodeStudy</p>
         </div>
         <!--?começo pelo botão de login ?  -->
         <div class="container-popup" id="container-cadastro">
-                <div class="popup">
-                    <button id="inative"><img src="imagens/FecharTela.png" 
-                        style="width: 30px; height: 30px; align-items: left; border: none; position: absolute; left: 93%; top: 5px;">
-                    </button>         
-                
-                    <form action = "banco.php" method="post">
-                    <label for="nome">Nome:</label>
-                    <input type="text" name = "nome" required><br>
-    
-                    <label for="usuario">Usuario:</label>
-                    <input type="text" name = "usuario" required><br>
-    
-                    <label for="nome">Email:</label>
-                    <input type="text" name = "email" required><br>
-    
-                    <label for="nome">Senha:</label>
-                    <input type="password" name = "senha" required><br>
-    
-                    <input type="submit" value="Cadastrar">
+            <div class="popup">
+
+                <form action="banco.php" method="post">
+                <div class="Buscar">
+                    <h1>Sing-Up</h1>
+                    <button id="inative" class="btn2"><i class='bx bx-x'></i></button>
+                    <div class="test">
+                        <input type="text" name="nome" placeholder="Nome" required>
+                        <i class='bx bx-rename' ></i>
+                    </div>
+
+                    <div class="test">
+                        <input type="text" name="usuario" placeholder="Username" required>
+                        <i class='bx bxs-user-account'></i>
+                    </div>
+
+                    <div class="test">
+                        <input type="text" name="email" placeholder="E-mail" required>
+                        <i class='bx bxs-envelope' ></i>
+                    </div>
+
+                    <div class="test">
+                        <input type="password" name="senha" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+
+                    <input type="submit" class="btn" value="Sing-Up">
+                    <div class="register-link">
+                        <p>Do you have an account?
+                            <a href="#" id="link-login">Login</a>
+                        </p>
+                    </div>
+                </div>
                 </form>
             </div>
         </div>
@@ -97,27 +115,45 @@
 
 
         <div class="container-popup" id="container-login">
-                <div class="popup">
-                    <button id="inative"><img src="imagens/FecharTela.png" 
-                        style="width: 30px; height: 30px; align-items: left; border: none; position: absolute; left: 93%; top: 5px;">
-                    </button>
-    
-                    <form action="login.php" method="post">
-                        <label for="username">Nome do Usuario:</label>
-                        <input type="text" id="username" name="username" required><br>
-                        <label for="senha">Senha:</label>
-                        <input type="password" id="senha" name="senha" required><br>
-                        <button type="submit">Entrar</button>
-                    </form>
-                
+            <div class="popup">
+
+
+                <form action="login.php" method="post">
+                    <div class="Buscar">
+                        <button id="inative" class="btn2"><i class='bx bx-x'></i></button>
+
+                        <h1>Login</h1>
+                        <div class="test">
+                            <input type="text" id="username" name="username" placeholder="Username" required><br>
+                            <i class='bx bxs-user-account'></i>
+                        </div>
+                        <div class="test">
+                            <input type="password" id="senha" name="senha" placeholder="Password" required><br>
+                            <i class='bx bxs-lock-alt'></i>
+                        </div>
+                        <div class="remember-forgot">
+                            <label for=""><input type="checkbox">Remember me</label>
+                            <a href="#">Forgot password?</a>
+                        </div>
+
+                        <button type="submit" class="btn">Login</button>
+                        <div class="register-link">
+                            <p>Don't have an account?
+                                <a href="#" id="link-cadastre-se">Sing-Up</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </form>
+
             </div>
         </div>
 
 
 
-           
-    
-        </div>
+
+
+    </div>
 
 </body>
 
