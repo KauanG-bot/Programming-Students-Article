@@ -10,118 +10,121 @@ body {
   font-family: "poppins", sans-serif;
 }
 
-.tela {
-  width: 100%;
-  height: 180vh;
-  background: rgba(8, 0, 44, 1);
-  opacity: 1;
-  position: relative;
-  overflow: hidden;
-  padding: 0;
+@media (min-width: 768px) {
+
+  .tela {
+    width: 100%;
+    height: 180vh;
+    background: rgba(8, 0, 44, 1);
+    opacity: 1;
+    
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .Cabecalho {
+    background: #030011;
+    width: 100%;
+    max-height: 55px;
+    height: 3%;
+    top: 1%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .Home {
+    color: rgba(95, 159, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: Inter;
+    font-size: 1.5rem;
+    opacity: 1;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: translate(-50%, -50%);
+  }
+
+}
+.Home:hover {
+  color: rgba(54, 50, 255, 1);
+  font-weight: bold;
 }
 
-.Cabecalho {
-  background: #030011;
-  width: 100%;
-  max-height: 55px;
-  height: 3%; 
-  top: 1%;
-  position: relative; 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-
-.Home {
-  color: rgba(95, 159, 255, 1);
-  position: absolute;
-  top: 50%; 
-  left: 50%;
-  font-family: Inter;
-  font-size: 1.5rem; 
-  opacity: 1;
-  text-align: left;
-  cursor: pointer;
-  text-decoration: underline;
-  transform: translate(-50%, -50%); 
-}
-
-@media screen and (max-height: 80px) {
+@media (min-width: 60px) {
   .Home {
     font-size: 1rem;
   }
-}
 
-.Artigos {
-  color: rgba(95, 159, 255, 1);
-  position: absolute;
-  top: 50%; 
-  left: 75%;
-  font-family: Inter;
-  font-size: 1.5rem; 
-  cursor: pointer;
-  text-decoration: underline;
-  transform: translate(-50%, -50%); 
-}
-
-.Artigos:hover {
-  color: rgba(54, 50, 255, 1);
-  font-weight: bold;
-}
-
-@media screen and (max-height: 80px) {
   .Artigos {
-    font-size: 1rem; 
+    color: rgba(95, 159, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    font-family: Inter;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: translate(-60%, -50%);
   }
-}
 
-.Sobre {
-  color: rgba(95, 159, 255, 1);
-  position: absolute;
-  top: 50%; 
-  left: 82%;
-  font-family: Inter;
-  font-size: 1.5rem; 
-  cursor: pointer;
-  text-decoration: underline;
-  transform: translate(-50%, -50%); 
-}
+  .Artigos:hover {
+    color: rgba(54, 50, 255, 1);
+    font-weight: bold;
+  }
 
-.Sobre:hover {
-  color: rgba(54, 50, 255, 1);
-  font-weight: bold;
-}
-
-@media screen and (max-height: 80px) {
   .Sobre {
-    font-size: 1rem; 
+    color: rgba(95, 159, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 82%;
+    font-family: Inter;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: translate(-50%, -50%);
+  }
+
+  .Sobre:hover {
+    color: rgba(54, 50, 255, 1);
+    font-weight: bold;
   }
 }
 
-.Kode {
-  color: rgba(95, 159, 255, 1);
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  font-family: Inter;
-  font-size: 1.5rem;
-  opacity: 1;
-  text-align: left;
-  cursor: pointer;
-  transform: translate(-50%, -50%);
+@media screen and (min-height: 60px) {
+  .Sobre {
+    font-size: 1rem;
+  }
+
+  .Kode {
+    color: rgba(95, 159, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    font-family: Inter;
+    font-size: 1.5rem;
+    opacity: 1;
+    text-align: left;
+    cursor: pointer;
+    transform: translate(-35%, -50%);
+  }
+
+  .Kodeimage {
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
-.Kodeimage {
-  width: 40px;
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  opacity: 1;
-  transform: translate(-50%, -50%);
-}
-
-@media screen and (max-height: 80px) {
+@media screen and (max-height: 200px) {
   .Kode,
   .Kodeimage {
     font-size: 1rem;
@@ -155,14 +158,13 @@ body {
   font-weight: bold;
 }
 
-
 .container {
   width: 99%;
   max-width: 2000px;
-  height: 70.2vh;
+  height: 75vh;
   max-height: 90vh;
   padding: 10px;
-  top: 50%;
+  top: 53%;
   border-radius: 10px;
   opacity: 1;
   position: absolute;
@@ -237,12 +239,13 @@ body {
 .instagram {
   width: 30px;
   height: 30px;
+  opacity: 1;
   position: absolute;
   top: 50%;
-  left: 47%;
+  left: calc(50% - 45px); 
   overflow: hidden;
-  transform: translateX(-50%) translateY(-60%);
   cursor: pointer;
+  transform: translateX(-20%) translateY(-60%);
 }
 
 .linkedin {
@@ -251,9 +254,10 @@ body {
   opacity: 1;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50%; 
+  margin-left: 15px; 
+  transform: translateX(20%) translateY(-60%);
   overflow: hidden;
-  transform: translateX(-50%) translateY(-60%);
   cursor: pointer;
 }
 
@@ -263,16 +267,18 @@ body {
   opacity: 1;
   position: absolute;
   top: 50%;
-  left: 53%;
-  overflow: hidden;
+  left: 50%;
+  margin: 0px; 
   transform: translateX(-50%) translateY(-60%);
+  overflow: hidden;
   cursor: pointer;
 }
+
 
 .bloco {
   background: rgba(0, 0, 0, 0.5);
   width: 60%;
-  height: 80vh; 
+  height: 79.5vh; 
   position: absolute;
   top: 5.4%;
   left: 2%; 
@@ -358,18 +364,18 @@ body {
   justify-content: space-between;
   padding: 0 20px;
 }
-
+@media (min-width: 60px) {
 .Kode2 {
   color: rgba(95, 159, 255, 1);
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 12%;
   font-family: Inter;
   font-size: 1.5rem;
   opacity: 1;
   text-align: left;
   cursor: pointer;
-  transform: translate(-50%, -50%);
+  transform: translate(-35%, -50%);
 }
 
 .Kodeimage2 {
@@ -379,6 +385,7 @@ body {
   left: 5%;
   opacity: 1;
   transform: translate(-50%, -50%);
+}
 }
 
 .conheca {
@@ -611,4 +618,6 @@ body {
   font-size: 36px;
   background: transparent;
 }
+
+
 
