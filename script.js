@@ -1,4 +1,4 @@
-// Logica pop-up de cadastro
+/ Logica pop-up de cadastro
 const activeCadastro = document.getElementById("active-cadastro");
 const containerCadastro = document.getElementById("container-cadastro");
 const inativeCadastro = containerCadastro.querySelector("#inative");
@@ -69,3 +69,5 @@ inativeLogin.addEventListener("click", () => {
     // Fecha o pop-up de login
     containerLogin.classList.remove("active");
 });
+
+

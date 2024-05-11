@@ -1,0 +1,560 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-size: 14px;
+  font-family: "poppins", sans-serif;
+  background: #F0F4FF;
+
+}
+
+@media (min-width: 768px) and (max-width: 1510px) {
+  body {
+    min-height: 390vh;
+  }
+}
+
+.tela {
+  height: 2000px;
+}
+
+@media (min-width: 768px) {
+
+  .Cabecalho {
+    background: #030011;
+    width: 100%;
+    max-height: 55px;
+    height: 6vh;
+    position: relative;
+  }
+
+  .Home {
+    color: #60A0FF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: Inter;
+    opacity: 1;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+.Home {
+  color: rgba(95, 159, 255, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: Inter;
+  opacity: 1;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: underline;
+  transform: translate(-50%, -50%);
+}
+
+.Home:hover {
+  color: rgba(54, 50, 255, 1);
+  font-weight: bold;
+}
+
+@media (min-width: 60px) {
+  .Home {
+    font-size: 1rem;
+  }
+
+  .Artigos {
+    color: rgba(95, 159, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    font-family: Inter;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: translate(-60%, -50%);
+  }
+
+  .Artigos:hover {
+    color: rgba(54, 50, 255, 1);
+    font-weight: bold;
+  }
+
+  .Sobre {
+    color: rgba(95, 159, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 82%;
+    font-family: Inter;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: translate(-50%, -50%);
+  }
+
+  .Sobre:hover {
+    color: rgba(54, 50, 255, 1);
+    font-weight: bold;
+  }
+
+  .Post {
+    color: rgba(95, 159, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 89%;
+    font-family: Inter;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: translate(-50%, -50%);
+    margin-left: 20px;
+  }
+
+  .Post:hover {
+    color: rgba(54, 50, 255, 1);
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-height: 60px) {
+  .Sobre {
+    font-size: 1rem;
+  }
+
+  .Kode {
+    color: rgba(95, 159, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    font-family: Inter;
+    font-size: 1.5rem;
+    opacity: 1;
+    text-align: left;
+    cursor: pointer;
+    transform: translate(-35%, -50%);
+  }
+
+  .Kodeimage {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-height: 200px) {
+
+  .Kode,
+  .Kodeimage {
+    font-size: 1rem;
+    width: 10px;
+  }
+}
+
+
+.PythonText {
+  color: #2D2F55;
+  opacity: 1;
+  padding: 1px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 1.5rem;
+  position: relative;
+  top: 40px;
+  left: 40px;
+  margin-bottom: 20px;
+}
+
+.Author {
+  color: #233060;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+}
+
+.DataScientist {
+  color: #04091c74;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.Author1,
+.Author2,
+.Author3 {
+  color: #233060;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: -0.04em;
+  margin-bottom: 60px;
+}
+
+.Author1 {
+  left: 20px;
+  /* Ajuste conforme necessário */
+  position: relative;
+}
+
+.Author2 {
+  left: 5%;
+  /* 20% de left em relação ao contêiner pai */
+  position: relative;
+}
+
+.Author3 {
+  left: 7%;
+  position: relative;
+}
+
+
+.imagePandas {
+  position: relative;
+  top: 30px;
+  /* Ajuste conforme necessário */
+  max-width: 1500px;
+  width: 100%;
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.TextImage {
+  opacity: 1;
+  position: relative;
+  top: 80px;
+  left: 2%;
+  color: #182EA5;
+  font-family: Inter;
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 1300px;
+  font-style: italic;
+  margin-bottom: 60px;
+}
+
+.TextWhat {
+  opacity: 1;
+  position: relative;
+  top: 60px;
+  left: 2%;
+  color: #34355E;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 1.5rem;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.TextPandas {
+  opacity: 1;
+  position: relative;
+  top: 60px;
+  left: 2%;
+  color: #2D2F55;
+  font-family: Inter;
+  font-size: 1rem;
+  max-width: 1400px;
+  margin-bottom: 60px;
+}
+
+.TextDataScience {
+  opacity: 1;
+  position: relative;
+  top: 40px;
+  left: 2%;
+  color: #34355E;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 1.5rem;
+  max-width: 500px;
+  margin-bottom: 5px;
+}
+
+.imagePython {
+  position: relative;
+  top: -10px;
+  /* Ajuste conforme necessário */
+  float: right;
+  left: -50px;
+  max-width: 300px;
+  min-width: 60px;
+  width: 100%;
+  margin: 10px;
+}
+
+.TextScience {
+  position: relative;
+  top: 60px;
+  left: 2%;
+  color: #2D2F55;
+  font-family: Inter;
+  font-size: 1rem;
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+
+
+.ReadingData {
+  opacity: 1;
+  position: relative;
+  top: 60px;
+  left: 2%;
+  color: #34355E;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 1.5rem;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.TextReading {
+  opacity: 1;
+  position: relative;
+  top: 60px;
+  left: 2%;
+  color: #2D2F55;
+  font-family: Inter;
+  font-size: 1rem;
+  max-width: 1400px;
+  margin-bottom: 20px;
+}
+
+.TextCaixaDf {
+  left: 10px;
+  color: #312DB1;
+  margin-bottom: 20px;
+  position: relative;
+  max-width: 5px;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.LoadingCaixaDf {
+  opacity: 1;
+  color: #6B67FF;
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 1.5rem;
+  left: 30px;
+  top: 10px;
+  font-weight: 500;
+  font-family: Inter;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.CaixaDf {
+  background-color: rgba(110.00000104308128, 107.00000122189522, 214.00000244379044, 0.12999999523162842);
+  width: 60%;
+  height: 600px;
+  border-radius: 40px;
+  position: relative;
+  top: 80px;
+  float: left;
+  max-height: 600px;
+  max-width: 70%;
+  opacity: 1;
+  margin: 10px;
+  overflow: auto;
+}
+
+.CaixaDf {
+  border: 3px solid rgba(110.00000104308128, 107.00000122189522, 214.00000244379044, 1);
+}
+
+
+.TextReturnsDf {
+  color: #47A20C;
+  font-family: Inter;
+  left: 30px;
+  top: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: relative;
+  max-width: 200px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 8px;
+  /* Adicione o espaçamento desejado */
+  border: 1px solid #a9fa7b;
+  /* Adicione bordas para separar visualmente as células */
+  text-align: left;
+}
+
+.ReturnsDf {
+  background: rgba(185, 232, 126, 0.03);
+  width: 34%;
+  height: 600px;
+  border-radius: 40px;
+  float: right;
+  left: -30px;
+  top: 80px;
+  position: relative;
+  overflow: auto;
+}
+
+.ReturnsDf {
+  border: 2px solid #83DB14;
+}
+
+.rowsxcolumns {
+  color: #286102;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+
+
+@media (min-width: 60px) {
+
+  .FinalCabecalho {
+    background: #030011;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 0 20px;
+    margin-top: 10px;
+  }
+
+
+  .Kode2 {
+    color: rgba(95, 159, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    font-family: Inter;
+    font-size: 1.5rem;
+    opacity: 1;
+    text-align: left;
+    cursor: pointer;
+    transform: translate(-35%, -50%);
+  }
+
+  .Kodeimage2 {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  .instagram {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 45px);
+    cursor: pointer;
+    transform: translateX(-20%) translateY(-60%);
+  }
+
+  .linkedin {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 15px;
+    transform: translateX(20%) translateY(-60%);
+    cursor: pointer;
+  }
+
+  .Facebook {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0px;
+    transform: translateX(-50%) translateY(-60%);
+    cursor: pointer;
+  }
+}
+
+.pandas_when {
+  opacity: 1;
+  position: relative;
+  top: 100px;
+  left: 2%;
+  color: #34355E;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 1.5rem;
+  max-width: 500px;
+  margin-bottom: 140px;
+}
+
+
+.imagePythonLivro {
+  top: -100px;
+  /* Ajuste conforme necessário */
+  left: -900px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  width: 100%;
+  margin: 10px;
+
+}
+
+.python-text {
+  position: relative;
+  top: 10px;
+  left: -2%;
+  color: #2D2F55;
+  float: right;
+  color: #2D2F55;
+  font-family: Inter;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin-bottom: 60px;
+  margin-left: 20px;
+  opacity: 1;
+}
+
+.espaco {
+  width: 100%;
+  /* Defina a largura conforme necessário */
+  height: 0px;
+  /* Defina a altura conforme necessário */
+  top: 100px;
+  /* Ajuste conforme necessário */
+  position: relative;
+  /* Troque para 'relative' para que o espaço respeite o fluxo do documento */
+  color: transparent;
+}

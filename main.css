@@ -1,11 +1,11 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+  margin: 0px;
   font-size: 14px;
   font-family: "poppins", sans-serif;
 }
@@ -17,7 +17,6 @@ body {
     height: 180vh;
     background: rgba(8, 0, 44, 1);
     opacity: 1;
-    
     position: relative;
     overflow: hidden;
     padding: 0;
@@ -28,12 +27,7 @@ body {
     width: 100%;
     max-height: 55px;
     height: 3%;
-    top: 1%;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
   }
 
   .Home {
@@ -42,7 +36,6 @@ body {
     top: 50%;
     left: 50%;
     font-family: Inter;
-    font-size: 1.5rem;
     opacity: 1;
     text-align: left;
     cursor: pointer;
@@ -84,13 +77,32 @@ body {
     top: 50%;
     left: 82%;
     font-family: Inter;
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
     text-decoration: underline;
     transform: translate(-50%, -50%);
+    margin-right:20px;
   }
 
   .Sobre:hover {
+    color: rgba(54, 50, 255, 1);
+    font-weight: bold;
+  }
+
+  .Post {
+    color: rgba(95, 159, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 89%;
+    font-family: Inter;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: translate(-50%, -50%);
+    margin-left:20px;
+  }
+
+  .Post:hover {
     color: rgba(54, 50, 255, 1);
     font-weight: bold;
   }
@@ -115,10 +127,10 @@ body {
   }
 
   .Kodeimage {
-    width: 40px;
+    width: 30px;
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 6%;
     opacity: 1;
     transform: translate(-50%, -50%);
   }
@@ -143,7 +155,6 @@ body {
   border: 1px solid rgba(59, 55, 255, 1);
   border-radius: 9px;
   color: rgba(54, 50, 255, 1);
-  position: absolute;
   font-family: Inter;
   font-size: 28px;
   display: flex;
@@ -161,8 +172,8 @@ body {
 .container {
   width: 99%;
   max-width: 2000px;
-  height: 75vh;
-  max-height: 90vh;
+  height: 50%;
+  max-height: 75vh;
   padding: 10px;
   top: 53%;
   border-radius: 10px;
@@ -170,10 +181,11 @@ body {
   position: absolute;
   overflow: hidden;
   border: blue 1px solid;
+  margin-bottom: 5px;
 }
 
 .graficoscontainer, .codenotcontainer, .livro_pythoncontainer {
-  margin-right: 70px; 
+  margin-right: -10px; 
   float: left;
   left: 0%;
   top: 20%;
@@ -181,10 +193,12 @@ body {
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
+
+  
 }
 
 .Graficos, .codenot, .livro_python {
-  max-width: 500px; 
+  max-width: 350px; 
   width: 100%;
   height: auto; 
   border: 1px solid rgba(59, 55, 255, 1);
@@ -197,7 +211,7 @@ body {
 
 .text_graficos, .text_codenot, .text_livro_python {
   font-family: Inter;
-  font-size: 20px; 
+  font-size: 15px; 
   color: rgba(255, 255, 255, 1);
   display: flex;
   flex-direction: column; 
@@ -214,8 +228,8 @@ body {
   cursor: pointer;
   overflow: hidden; 
   color: white;
-  width: 270px;
-  height: 70px;
+  width: 170px;
+  height: 50px;
   background: blue;
   opacity: 1;
   position: relative; 
@@ -225,7 +239,7 @@ body {
 
   /*TEXT Leia Mais*/
   font-family:  Calibri;
-  font-size: 37px;
+  font-size: 30px;
 }
 
 
@@ -233,45 +247,6 @@ body {
 .bloco_graficos:hover, .bloco_codenot:hover, .bloco_livro_python:hover {
   border-radius: 20px;
   background: rgba(32, 18, 191, 0.11999999731779099);
-}
-
-
-.instagram {
-  width: 30px;
-  height: 30px;
-  opacity: 1;
-  position: absolute;
-  top: 50%;
-  left: calc(50% - 45px); 
-  overflow: hidden;
-  cursor: pointer;
-  transform: translateX(-20%) translateY(-60%);
-}
-
-.linkedin {
-  width: 30px;
-  height: 30px;
-  opacity: 1;
-  position: absolute;
-  top: 50%;
-  left: 50%; 
-  margin-left: 15px; 
-  transform: translateX(20%) translateY(-60%);
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.Facebook {
-  width: 30px;
-  height: 30px;
-  opacity: 1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: 0px; 
-  transform: translateX(-50%) translateY(-60%);
-  overflow: hidden;
-  cursor: pointer;
 }
 
 
@@ -352,46 +327,84 @@ body {
 
 }
 
-.FinalCabecalho {
-  background: #030011;
-  width: 100%;
-  max-height: 55px;
-  height: 3%; 
-  top: 93%;
-  position: relative; 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
 @media (min-width: 60px) {
-.Kode2 {
-  color: rgba(95, 159, 255, 1);
-  position: absolute;
-  top: 50%;
-  left: 12%;
-  font-family: Inter;
-  font-size: 1.5rem;
-  opacity: 1;
-  text-align: left;
-  cursor: pointer;
-  transform: translate(-35%, -50%);
-}
 
-.Kodeimage2 {
-  width: 40px;
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  opacity: 1;
-  transform: translate(-50%, -50%);
-}
+  .FinalCabecalho {
+    background: #030011;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 0 20px;
+    margin-top: 10px;
+  }
+
+
+  .Kode2 {
+    color: rgba(95, 159, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    font-family: Inter;
+    font-size: 1.5rem;
+    opacity: 1;
+    text-align: left;
+    cursor: pointer;
+    transform: translate(-35%, -50%);
+  }
+
+  .Kodeimage2 {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  .instagram {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 45px);
+    cursor: pointer;
+    transform: translateX(-20%) translateY(-60%);
+  }
+
+  .linkedin {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 15px;
+    transform: translateX(20%) translateY(-60%);
+    cursor: pointer;
+  }
+
+  .Facebook {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0px;
+    transform: translateX(-50%) translateY(-60%);
+    cursor: pointer;
+  }
 }
 
 .conheca {
   color: #D7D9FF;
   font-family: inter;
-  top: 1%;
+  top: 10%;
   left: 2%;
   font-size: 50px;
   position: absolute;
@@ -401,7 +414,7 @@ body {
 .aprenda {
   color: #9ca1ff;
   font-family: Inter;
-  top: 10%;
+  top: 15%;
   left: 3%;
   font-size: 20px;
   position: absolute;
