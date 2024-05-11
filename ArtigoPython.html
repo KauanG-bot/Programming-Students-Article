@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Artigo Python</title>
+    <link href="ArtigoPython.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="tela">
+        <div class="Cabecalho">
+            <a href="index.html" class="Home">Home</a>
+            <a href="postagem.html"  class="Post">Postagem</a>
+            <a class="Sobre">Sobre n&oacute;s</a>
+            <p class="Kode">KodeStudy</p>
+            <img src="Imagens/image.png" class="Kodeimage">
+        </div>
+
+
+    
+    <p class="PythonText">
+        Python Pandas Tutorial:
+        <br>
+        A Complete Introduction for Beginners
+        <br>
+        <br>
+    </p>
+
+    <div class="Author">
+        <span class="Author1">Author:
+            <a href="https://www.learndatasci.com/author/GeorgeMcIntire" target="_blank">GeorgeMcIntire</a>
+            <span class="DataScientist">Data Scientist</span>
+        </span>
+
+        <span class="Author2">Author:
+            <a href="https://www.learndatasci.com/author/brendan" target="_blank">Brendan Martin</a>
+            <span class="DataScientist">Founder of LearnDataSci</span>
+        </span>
+
+        <span class="Author3">Author:
+            <a href="https://www.learndatasci.com/author/brendan" target="_blank">Brendan Martin</a>
+            <span class="DataScientist">Founder of LearnDataSci</span>
+        </span>
+    </div>
+    <br>
+    <br>
+
+    <img src="Imagens/imagePandas.png" class="imagePandas">
+
+
+    <div class="container">
+        <span class="TextImage">
+            The pandas package is the most important tool at the disposal of Data Scientists and Analysts working in
+            Python today. The powerful machine learning and glamorous visualization tools may get all the attention, but
+            pandas is the backbone of most data projects.
+        </span>
+        <p class="TextWhat">
+            What's Pandas for?
+        </p>
+    </div>
+
+    <!--Texto do Titulo de What Pandas-->
+    <p class="TextPandas">
+        Pandas has so many uses that it might make sense to list the things it can't do instead of what it can do. This
+        tool is essentially your data's home. Through pandas, you get acquainted with your data by cleaning,
+        transforming, and analyzing it.
+    </p>
+
+
+    <!-- Titulo de DataScience-->
+    <p class="TextDataScience">
+        How does pandas fit into the data science toolkit?
+    </p>
+<div class="containerScience">
+    <img src="Imagens/Python.png" class="imagePython">
+    <!--Texto do Titulo de DataScience-->
+    <p class="TextScience">
+        Not only is the pandas library a central component of the data science toolkit but it is used in conjunction
+        with other libraries in that collection.Pandas is built on top of the NumPy package, meaning a lot of the
+        structure of NumPy is used or replicated in Pandas. Data in pandas is often used to feed statistical analysis in
+        SciPy, plotting functions from Matplotlib, and machine learning algorithms in Scikit-learn.Jupyter Notebooks
+        offer a good environment for using pandas to do data exploration and modeling, but pandas can also be used in
+        text editors just as easily. It give us the ability to execute code in a particular cell as opposed to running
+        the entire file. This saves a lot of time when working with large datasets and complex transformations.
+        <br>
+        <br>
+        Notebooks also provide an easy way to visualize pandas DataFrames and plots. As a matter of fact, this article
+        was created entirely in a Jupyter Notebook.
+    </p>
+</div>
+
+    <p class="ReadingData">
+        Reading Data into Pandas DataFrames
+    </p>
+    <p class="TextReading">
+        Pandas offers a lot of functionality for reading different data types into DataFrames. For example, you can read
+        data from Excel files, text files (like CSV), SQL databases, web APIs stored in JSON data, and even directly
+        from webpages!
+        Let’s take a look at how we can load a CSV file. pandas provides the option of loading the dataset either as a
+        file stored on your computer or as a file it can download from a webpage. Take a look at the dataset here. You
+        can either download it or work with it as the webpage (though, you’ll need an active internet connection, of
+        course).
+    </p>
+    <div>
+    <div class="CaixaDf">
+        <span class="LoadingCaixaDf"># Loading a CSV File into a Pandas DataFrame<br></span>
+        <span class="TextCaixaDf"> <br> <br> import pandas as pd <br> <br> df =
+            pd.read_csv('https://raw.githubusercontent.com/datagy/data/main/data.csv')<br> <br>print(df) "</span>
+    </div>
+
+    </div>
+    <div class="ReturnsDf">
+        <table class="TextReturnsDf">
+            <tr>
+                <th>Date</th>
+                <th>Region</th>
+                <th>Type</th>
+                <th>Units</th>
+                <th>Sales</th>
+            </tr>
+
+            <tr>
+                <td>2020-07-11</td>
+                <td>East</td>
+                <td>Children's Clothing</td>
+                <td>18.0</td>
+                <td>306.0</td>
+            </tr>
+
+            <tr>
+                <td>2020-09-23</td>
+                <td>North</td>
+                <td>Children's Clothing</td>
+                <td>14.0</td>
+                <td>448.0</td>
+            </tr>
+
+            <tr>
+                <td>2020-04-02</td>
+                <td>South</td>
+                <td>Women's Clothing</td>
+                <td>17.0</td>
+                <td>425.0</td>
+            </tr>
+
+            <tr>
+                <td>2020-02-28</td>
+                <td>East</td>
+                <td>Children's Clothing</td>
+                <td>26.0</td>
+                <td>832.0</td>
+            </tr>
+
+            <tr>
+                <td>2020-03-19</td>
+                <td>West</td>
+                <td>Women's Clothing</td>
+                <td>3.0</td>
+                <td>33.0</td>
+            </tr>
+
+            <tr>
+                <td>..</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+
+            <tr>
+                <td>2020-02-11</td>
+                <td>East</td>
+                <td>Children's Clothing</td>
+                <td>35.0</td>
+                <td>735.0</td>
+            </tr>
+
+            <tr>
+                <td>2020-12-25</td>
+                <td>North</td>
+                <td>Men's Clothing</td>
+                <td>NaN</td>
+                <td>1155.0</td>
+            </tr>
+
+            <tr>
+                <td>2020-08-31</td>
+                <td>South</td>
+                <td>Women's Clothing</td>
+                <td>17.0</td>
+                <td>493.0</td>
+            </tr>
+
+            <tr>
+                <td>2020-08-17</td>
+                <td>North</td>
+                <td>Women's Clothing</td>
+                <td>25.0</td>
+                <td>300.0</td>
+            </tr>
+
+            <tr>
+                <td class="rowsxcolumns">[1000 rows x 5 columns]</td>
+
+            </tr>
+        </table>
+    </div>
+
+</div>
+<p class="pandas_when">When should you start using pandas?</p>
+<img src="Imagens/livro_python.png" class="imagePythonLivro">
+<p class="python-text">If you do not have any experience coding in Python, then you should stay away from learning pandas until you do. You don’t have to be at the level of the software engineer, but you should be adept at the basics, such as lists, tuples, dictionaries, functions, and iterations. Also, I’d also recommend familiarizing yourself with NumPy due to the similarities mentioned above.</p>
+
+
+
+<div class="FinalCabecalho">
+    <img src="Imagens/Instagram.png" class="instagram">
+    <img src="Imagens/Linkedin.png" class="linkedin">
+    <img src="Imagens/Facebook.png" class="Facebook">
+    <img src="Imagens/image.png" class="Kodeimage2">
+    <p class="Kode2">KodeStudy</p>
+</div> 
+
+<div class="espaco">nada</div>
+</div>
+</body>
+
+</html>

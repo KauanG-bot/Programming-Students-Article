@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (isset($_POST['username']) && isset($_POST['senha'])) {
@@ -34,10 +34,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($result->num_rows > 0) {
             // Login bem-sucedido, redireciona para a página de destino
-            header("Location: teste.html");
+            header("Location: index.html");
             exit();
         } else {
-            // Credenciais incorretas
+            // Credenciais incorretas]
             echo "Usuário ou senha incorretos.";
         }
 
