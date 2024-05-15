@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="ArtigoSQL.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="Cabecalho">
+
+        <img src="Imagens/image.png" class="Kodeimage">
+        <p class="Kode">KodeStudy</p>
+
+
+        <a href="index.html" class="Home">Home</a>
+        <a href="#" class="Artigos" onclick="scrollDown()">Artigos</a>
+        <a class="Sobre">Sobre n&oacute;s</a>
+        <a href="postagem.html" class="Post">Postagem</a>
+
+    </div>
+
+    <p class="Text_What">What Is SQL & How Does It Work? A Guide to Structured <br> Query Language</p>
+
+    <span class="Author1">Author:
+        <a href="https://www.learndatasci.com/author/GeorgeMcIntire" target="_blank"> Sakshi Gupta</a>
+        <span class="DataScientist">Data Scientist</span>
+
+
+    </span>
+    <p class="First_text">
+        SQL or Structured Query Language is a critical tool for data professionals. It is undoubtedly the most important
+        language for getting a job in the field of data analysis or data sciences.
+        Millions of data points are being generated every minute and raw data does not have any story to tell. After all
+        this data gets stored in databases and professionals use SQL to extract this data for further analysis.
+    </p>
+
+    <img src="Imagens/SQL_server.png" class="Image_SQL_Server" alt="">
+
+    <p class="Text_In">In this blog post, we will cover what is SQL and how does it work. SQL is fairly simple, thanks
+        to easy syntaxes of this language. Let’s dig into understanding this Structured Query Language by asking this
+        simple question.</p>
+    <p class="Text_WhatSQL">What is SQL And How Does it Work?</p>
+    <p class="Text_SQL_Data">SQL is the most common language for extracting and organising data that is stored in a
+        relational database. A database is a table that consists of rows and columns. SQL is the language of databases.
+        It facilitates retrieving specific information from databases that are further used for analysis. Even when the
+        analysis is being done on another platform like Python or R, SQL would be needed to extract the data that you
+        need from a company’s database.</p>
+    <p class="Text_SQL_Manages">SQL manages a large amount of data, especially if there is a lot of data that is being
+        written simultaneously and there are too many data transactions.
+        There are different versions and frameworks for SQL, the most commonly used is MySQL. MySQL is an open-source
+        solution that helps facilitate SQL’s role in managing back-end data for web applications. Companies such as
+        Facebook, Instagram, WhatsApp, etc. all use SQL for back-end data storage and data processing solutions. When an
+        SQL query is written & run (or parsed), it is processed by a query optimiser. The query reaches SQL server,
+        where it compiles in three phases; Parsing, Binding and Optimisation.
+    <ul class="Text_SQL_Manages_ul">
+        <br>
+        <li><strong> Parsing</strong> – A process to check the syntax</li>
+        <li><strong>Binding </strong> – A process to check the query semantics</li>
+        <li><strong>Optimisation </strong> – A process to generate the query execution plan</li>
+    </ul>
+    <br>
+    <p class="Text_SQL_Manages">
+        In the third step, all possible permutations and combinations are generated to find the most effective query
+        execution plan in a reasonable time. The shorter the query takes, the better it is.
+    </p>
+    </p>
+
+    <p class="What_SQL_Used">What is SQL Used for?</p>
+
+    <p class="What_Used_Text">Now that we understand what is SQL and how does it work, let’s try to see what SQL can do.
+        This programming
+        language has various uses for data analysts & data science professionals. It is particularly helpful because it
+        can:
+
+    <ul class="What_Used_Text_ul">
+        <br>
+        <li>Execute queries against a database</li>
+        <li>Retrieve data from a database</li>
+        <li>Insert records into a database</li>
+        <li>Update records in a database</li>
+        <li>Delete records from a database</li>
+        <li>Create new databases, or new tables in a database</li>
+        <li>Create stored procedures & views in a database</li>
+        <li>Set permissions on tables, procedures, and views</li>
+        <li>Create new databases, or new tables in a database</li>
+        <br>
+    </ul>
+
+
+    <p class="What_Used_Text">
+        Imagine how difficult life would be if we did not have a way to control the database in this format. After
+        getting a sense of what SQL is used for, let’s try our hands at learning SQL on an actual database.
+    </p>
+    </p>
+
+    <p class="Is_SQL">What Is SQL And How Does It Work:<span class="Learning_SQL"> Learning SQL With Some Basic SQL
+            Commands </span> </p>
+
+    <p class="We_Have_SQL">We have learned above what SQL is used for, so let’s try out each of these things on a real dataset. As an
+        example, we have chosen a database of customers at an e-commerce store. This is what it looks like this:</p>
+
+        <img src="Imagens/SQL_Stores.png" class="Image_SQL_Stores" alt="">
+
+        <p class="Here_SQL">Here are some commands that we will be learning about, and later practicing as well.
+            Command and description:</p>
+
+        <p class="Create">CREATE <br><span class="Text_Create">Creates a new table, a view of a table, or another object in the database.<br></span></p>
+        <p class="Alter">ALTER <br><span class="Text_Alter">Modifies an existing database object, such as a table.<br></span></p>
+        <p class="Drop">DROP <br><span class="Text_Drop">Deletes an entire table, a view of a table or other objects in the database.<br></span></p>
+        <p class="Select">SELECT <br><span class="Text_Select">Retrieves certain records from one or more tables.<br></span></p>
+        <p class="Insert">INSERT <br><span class="Text_Insert">Creates a record.<br></span></p>
+        <p class="Update">UPDATE <br><span class="Text_Update">Modifies a record.<br></span></p>
+        <p class="Delete">DELETE <br><span class="Text_Delete">Deletes a record.<br></span></p>
+        <p class="Grant">GRANT <br><span class="Text_Grant">Gives a privilege to users.<br></span></p>
+        <p class="Revoke">REVOKE <br><span class="Text_Revoke">Takes back privileges granted from users.</span></p>
+
+
+        <p class="Commands_SQL">If you notice, the commands ‘create, alter & drop’ define the complete structure of data. They come under the ‘Data Definition Language’ set of commands. Similarly, ‘select, insert, update, delete’ fall under Data Manipulation Language & ‘grant, revoke’</p>
+        <div class="space">abc</div>
+    </body>
+
+</html>

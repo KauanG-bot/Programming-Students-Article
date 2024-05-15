@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +15,6 @@
     <div class="tela">
         <div class="Cabecalho">
             <a href="index.html" class="Home">Home</a>
-            <a href="ArtigoPython.html"  class="Artigos">Artigos</a>
             <a class="Sobre">Sobre n&oacute;s</a>
             <p class="Kode">KodeStudy</p>
             <img src="Imagens/image.png" class="Kodeimage">
@@ -31,10 +28,28 @@
         <textarea id="texto" name="texto" class="texto"></textarea><br>
         <label for="imagem" class="labelimagem">
             Escolha uma Imagem  
-            <input type="file" id="imagem" name="imagem" class="image-upload" placeholder="Kauantestando">
+            <input type="file" id="imagem" name="imagem" class="image-upload" placeholder="Kauantestando" onchange="previewImage(event)">
         </label>
         <input type="submit" value="Publicar" class="Public">
     </form>
+    <div id="imagePreview"></div>
+
+
+    <script>
+    function previewImage(event) {
+  var reader = new FileReader();
+  reader.onload = function() {
+    var imagePreview = document.getElementById("imagePreview");
+    var uploadedImage = document.createElement("img");
+    uploadedImage.src = reader.result;
+    uploadedImage.style.maxWidth = "100%";
+    imagePreview.innerHTML = ""; // Limpa o conteÃºdo anterior
+    imagePreview.appendChild(uploadedImage);
+  };
+  reader.readAsDataURL(event.target.files[0]);
+}
+
+    </script>
 
     <div class="Branco"></div>
 </body>

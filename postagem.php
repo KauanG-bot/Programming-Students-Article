@@ -29,7 +29,7 @@ class Postagem {
 $dbBanco = 'localhost';
 $dbUserName = 'root';
 $dbPasword = '';
-$dbName = 'dadosusuario'; 
+$dbName = 'usuario'; 
 $dsn = "mysql:host=$dbBanco;dbname=$dbName";
 $usuario = $dbUserName;
 $senha = $dbPasword;
@@ -64,16 +64,32 @@ try {
     echo "<html lang='pt-br'>";
     echo "<head>";
     echo "<meta charset='UTF-8'>";
+    echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
+    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
+    echo '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">';
+
     echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
+    echo "<link href=\"postagem.css\" rel=\"stylesheet\"/>";
     echo "<title>Postagens</title>";
     echo "</head>";
     echo "<body>";
-    echo "<h1>Postagens</h1>";
+    echo "<div class=\"tela\">
+    <div class=\"Cabecalho\">
+        <a href=\"index.html\" class=\"Home\">Home</a>
+        <a href=\"ArtigoPython.html\"  class=\"Artigos\">Artigos</a>
+        <a class=\"Sobre\">Sobre n&oacute;s</a>
+        <p class=\"Kode\">KodeStudy</p>
+        <img src=\"Imagens/image.png\" class=\"Kodeimage\">
+    </div>
+</div>";
+
+    echo "<h1 class=\"postagenscenter\">Postagens</h1>";
+
     
  foreach ($todasPostagens as $post) {
     echo "<div class='postagem'>";
     // Use isset() para verificar se o título e o texto estão definidos e não vazios
-    echo "<h2>" . (isset($post['Titulo']) && !empty($post['Titulo']) ? $post['Titulo'] : 'Título não disponível') . "</h2>";
+    echo "<h2 class>" . (isset($post['Titulo']) && !empty($post['Titulo']) ? $post['Titulo'] : 'Título não disponível') . "</h2>";
     echo "<p>" . (isset($post['Texto']) && !empty($post['Texto']) ? $post['Texto'] : 'Texto não disponível') . "</p>";
     if (!empty($post['imagem_dados']) && !empty($post['imagem_tipo'])) {
         echo "<img src='data:{$post['imagem_tipo']};base64," . base64_encode($post['imagem_dados']) . "' alt='Imagem da postagem'>";
@@ -82,6 +98,9 @@ try {
     }
     echo "</div>";
 }
+
+
+
     
     echo "</body>";
     echo "</html>";
