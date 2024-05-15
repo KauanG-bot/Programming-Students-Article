@@ -11,7 +11,7 @@
     $dbBanco = 'localhost';
     $dbUserName = 'root';
     $dbPasword = '';
-    $dbName = 'dadosusuario';
+    $dbName = 'usuario';
     
      $coon = new mysqli($dbBanco,$dbUserName, $dbPasword, $dbName);
     

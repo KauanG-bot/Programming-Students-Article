@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -16,95 +17,97 @@
         <!-- !Cabeçalho inicial com informações de inicio, pagina de artigos e sobre nós-->
         <div class="Cabecalho">
             <a href="index.html" class="Home">Home</a>
-            <a href="ArtigoPython.html"  class="Artigos">Artigos</a>
+            <a href="#" class="Artigos" onclick="scrollDown()">Artigos</a>
             <a class="Sobre">Sobre n&oacute;s</a>
-            <a href="postagem.html"  class="Post">Postagem</a>
+            <a href="postagem.html" class="Post">Postagem</a>
             <p class="Kode">KodeStudy</p>
             <img src="Imagens/image.png" class="Kodeimage">
-            
+
         </div>
 
         <!-- !Imagem de fundo do bloco-->
         <img src="Imagens/imagemSom.png" class="imagemSom">
 
         <!-- !Bloco preto com a classe texto-->
-        
-        <div class="bloco">
-        <!--!Texto do bloco, com sing up  e se a pessoa tem conta-->
-        <div class="texto">
-            <p class="white">Develop your <span class="blue">skills</span> <br> with <span
-                    class="green">our</span>system</p>
-            <button id="active-cadastro" class="SingUp2">Sing-Up</button>
-            <p class="account">Do you already have an account? <button id="active-login" class="green2">Login</button>
-            </p>
 
+        <div class="bloco">
+            <!--!Texto do bloco, com sing up  e se a pessoa tem conta-->
+            <div class="texto">
+                <p class="white">Develop your <span class="blue">skills</span> <br> with <span
+                        class="green">our</span>system</p>
+                <button id="active-cadastro" class="SingUp2">Sing-Up</button>
+                <p class="account">Do you already have an account? <button id="active-login"
+                        class="green2">Login</button>
+                </p>
+
+            </div>
         </div>
-    </div>
 
         <!--*imagens no final da pagina para ver mais etc essa é a primeira que tem-->
-<div class="container">
-    <p class="aprenda">Aprenda sobre tecnologia e compartilhe suas ideias</p>
-    <p class="conheca">Conhe&ccedil;a mais sobre a KodeStudy</p>
-        <div class="graficoscontainer">
-            <img class="Graficos" src="Imagens/Graficos.png">
-            <span class="text_graficos">Data Science: Como se tornar um  <br>Cientista de Dados em 2024</span>
-            <div  class="bloco_graficos"><span>Leia mais</span></div>
+        <div class="container">
+            <p class="aprenda">Aprenda sobre tecnologia e compartilhe suas ideias</p>
+            <p class="conheca">Conhe&ccedil;a mais sobre a KodeStudy</p>
+            <div class="graficoscontainer">
+                <img class="Graficos" src="Imagens/Graficos.png">
+                <span class="text_graficos"><strong>Explorando o Universo do SQL:</strong> <br> Rumo à Maestria em Bancos de Dados <br> e Análise de Dados em 2024</span>
+                <div class="bloco_graficos"><a href="ArtigoSQL.html" class="leiapython">Leia Mais</a></div>
+            </div>
+
+            <!--*imagens no final da pagina para ver mais etc essa é a segunda com imagem de um notebook e codigos-->
+
+            <div class="codenotcontainer">
+                <img class="codenot" src="Imagens/codenot.png">
+                <span class="text_codenot"><strong>Tornando-se um Mestre em Kotlin:</strong> <br>Dominando a
+                    Linguagem de Programação <br> para Desenvolvimento Android e Além</span>
+                <div class="bloco_codenot"><a href="ArtigoKotlin.html" class="leiapython">Leia Mais</a></div>
+            </div>
+
+            <!--*imagens no final da pagina para ver mais etc essa é a terceira que tem com um livro de python-->
+
+            <div class="livro_pythoncontainer">
+                <img class="livro_python" src="Imagens/livro_python.png">
+                <span class="text_livro_python"><strong>Data Science:</strong><br> Como se tornar um  Cientista de Dados em 2024</span>
+                <div class="bloco_livro_python"><a href="ArtigoPython.html" class="leiapython">Leia Mais</a></div>
+            </div>
+
         </div>
-
-        <!--*imagens no final da pagina para ver mais etc essa é a segunda com imagem de um notebook e codigos-->
-
-        <div class="codenotcontainer">
-            <img class="codenot" src="Imagens/codenot.png">
-            <span class="text_codenot">Data Science: Como se tornar um <br> Cientista de Dados em 2024</span>
-            <div  class="bloco_codenot"><span>Leia mais</span></div>
-        </div>
-
-        <!--*imagens no final da pagina para ver mais etc essa é a terceira que tem com um livro de python-->
-
-        <div class="livro_pythoncontainer">
-            <img class="livro_python" src="Imagens/livro_python.png">
-            <span class="text_livro_python">Data Science: Como se tornar um <br> Cientista de Dados em 2024</span>
-            <div  class="bloco_livro_python"><span>Leia Mais</span></div>
-        </div>
-        
-    </div>
         <!--! Cabeçalho final com redes sociais-->
-       
+
         <!--?começo pelo botão de login ?  -->
         <div class="container-popup" id="container-cadastro">
             <div class="popup">
 
                 <form action="banco.php" method="post">
-                <div class="Buscar">
-                    <h1>Sing-Up</h1>
-                    <button id="inative" class="btn2"><i class='bx bx-x'></i></button>
-                    <div class="test">
-                        <input type="text" name="nome" placeholder="Nome" required>
-                        <i class='bx bx-rename' ></i>
-                    </div>
+                    <div class="Buscar">
+                        <h1>Sing-Up</h1>
+                        <button id="inative" class="btn2"><i class='bx bx-x'></i></button>
+                        <div class="test">
+                            <input type="text" name="nome" placeholder="Nome" required>
+                            <i class='bx bx-rename'></i>
+                        </div>
 
-                    <div class="test">
-                        <input type="text" name="usuario" placeholder="Username" required>
-                        <i class='bx bxs-user-account'></i>
-                    </div>
+                        <div class="test">
+                            <input type="text" name="usuario" placeholder="Username" required>
+                            <i class='bx bxs-user-account'></i>
+                        </div>
 
-                    <div class="test">
-                        <input type="text" name="email" placeholder="E-mail" required>
-                        <i class='bx bxs-envelope' ></i>
-                    </div>
+                        <div class="test">
+                            <input type="text" name="email" placeholder="E-mail" required>
+                            <i class='bx bxs-envelope'></i>
+                        </div>
 
-                    <div class="test">
-                        <input type="password" name="senha" placeholder="Password" required>
-                        <i class='bx bxs-lock-alt'></i>
-                    </div>
+                        <div class="test">
+                            <input type="password" name="senha" placeholder="Password" required>
+                            <i class='bx bxs-lock-alt'></i>
+                        </div>
 
-                    <input type="submit" class="btn" value="Sing-Up">
-                    <div class="register-link">
-                        <p>Do you have an account?
-                            <a href="#" id="link-login">Login</a>
-                        </p>
+                        <input type="submit" class="btn" value="Sing-Up">
+                        <div class="register-link">
+                            <p>Do you have an account?
+                                <a href="#" id="link-login">Login</a>
+                            </p>
+                        </div>
                     </div>
-                </div>
                 </form>
             </div>
         </div>
@@ -155,8 +158,16 @@
             <img src="Imagens/Facebook.png" class="Facebook">
             <img src="Imagens/image.png" class="Kodeimage2">
             <p class="Kode2">KodeStudy</p>
-        </div> 
+        </div>
     </div>
+    <script>
+        function scrollDown() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 
 </body>
 

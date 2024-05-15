@@ -1,0 +1,776 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-size: 14px;
+    font-family: "poppins", sans-serif;
+    background: #F0F4FF;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 1510px) {
+    body {
+        min-height: 390vh;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+    .Cabecalho {
+        background: #030011;
+        width: 100%;
+        max-height: 55px;
+        height: 6vh;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+    }
+
+
+
+
+.Home {
+    color: rgba(95, 159, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: Inter;
+    opacity: 1;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: translate(-50%, -50%);
+}
+
+.Home:hover {
+    color: rgba(54, 50, 255, 1);
+    font-weight: bold;
+}
+
+@media (min-width: 60px) {
+    .Home {
+        font-size: 1rem;
+    }
+
+    .Artigos {
+        color: rgba(95, 159, 255, 1);
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        font-family: Inter;
+        font-size: 1rem;
+        cursor: pointer;
+        text-decoration: underline;
+        transform: translate(-60%, -50%);
+    }
+
+    .Artigos:hover {
+        color: rgba(54, 50, 255, 1);
+        font-weight: bold;
+    }
+
+    .Sobre {
+        color: rgba(95, 159, 255, 1);
+        position: absolute;
+        top: 50%;
+        left: 82%;
+        font-family: Inter;
+        font-size: 1.5rem;
+        cursor: pointer;
+        text-decoration: underline;
+        transform: translate(-50%, -50%);
+    }
+
+    .Sobre:hover {
+        color: rgba(54, 50, 255, 1);
+        font-weight: bold;
+    }
+
+    .Post {
+        color: rgba(95, 159, 255, 1);
+        position: absolute;
+        top: 50%;
+        left: 89%;
+        font-family: Inter;
+        font-size: 1rem;
+        cursor: pointer;
+        text-decoration: underline;
+        transform: translate(-50%, -50%);
+        margin-left: 20px;
+    }
+
+    .Post:hover {
+        color: rgba(54, 50, 255, 1);
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-height: 60px) {
+    .Sobre {
+        font-size: 1rem;
+    }
+
+    .Kode {
+        color: rgba(95, 159, 255, 1);
+        position: absolute;
+        top: 50%;
+        left: 12%;
+        font-family: Inter;
+        font-size: 1.5rem;
+        opacity: 1;
+        text-align: left;
+        cursor: pointer;
+        transform: translate(-35%, -50%);
+    }
+
+    .Kodeimage {
+        width: 30px;
+        position: absolute;
+        top: 50%;
+        left: 6%;
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-height: 200px) {
+
+    .Kode,
+    .Kodeimage {
+        font-size: 1rem;
+        width: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+.Cabecalho {
+    display: none;
+}
+}
+
+.Text_What {
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 2%;
+    color: #34355E;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+
+.Author {
+    color: #233060;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 160px;
+    left: 20px;
+
+}
+
+.DataScientist {
+    color: #04091c74;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 0.8rem;
+
+}
+
+.Author1 {
+    color: #233060;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: -0.04em;
+    
+}
+
+.Author1 {
+    left: 2%;
+    position: relative;
+}
+
+
+
+.First_text {
+    font-family: Inter;
+    top: 10px;
+    position: relative;
+    left: 2%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 700px;
+}
+
+@media screen and (max-width: 1252px) {
+    .First_text {
+        left: 2%;
+        width: 1000px;
+    }
+}
+
+
+.Image_SQL_Server {
+    position: relative;
+    max-width: 1000px;
+    min-width: 60px;
+    width:  650px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1253px) {
+    .Image_SQL_Server {
+        top: -220px;
+        left: 800px;
+
+    
+    }
+
+}
+
+@media screen and (max-width: 1252px) {
+    .Image_SQL_Server {
+        top: 40px;
+        left: 2%;
+        width: 900px;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    .Image_SQL_Server {
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        
+    }
+}
+
+.Text_In {
+    font-family: Inter;
+    top: -300px;
+    position: relative;
+    left: 2%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 700px;
+}
+
+@media screen and (max-width: 1252px) {
+    .Text_In {
+        top: 70px;
+        left: 2%;
+        width: 800px;
+    }
+}
+
+.Text_WhatSQL {
+    opacity: 1;
+    position: relative;
+    left: 2%;
+    top: -280px;
+    color: #34355E;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1252px) {
+    .Text_WhatSQL {
+        top: 100px;
+        left: 2%;
+        
+    }
+}
+
+.Text_SQL_Data {
+    font-family: Inter;
+    top: -250px;
+    position: relative;
+    left: 2%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 1600px;
+}
+
+@media screen and (max-width: 1252px) {
+    .Text_SQL_Data {
+        top: 120px;
+        left: 2%;
+        width: 800px;
+        
+    }
+}
+
+.Text_SQL_Manages {
+    font-family: Inter;
+    top: -220px;
+    position: relative;
+    left: 2%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 1600px;
+}
+
+@media screen and (max-width: 1252px) {
+    .Text_SQL_Manages {
+        top: 130px;
+        left: 2%;
+        width: 800px;
+    }
+}
+
+.Text_SQL_Manages_ul {
+    font-family: Inter;
+    top: -220px;
+    position: relative;
+    left: 4%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 1400px;
+}
+
+@media screen and (max-width: 1252px) {
+    .Text_SQL_Manages_ul {
+        top: 130px;
+        left: 4%;
+        width: 800px;
+    }
+}
+
+
+.What_SQL_Used {
+    opacity: 1;
+    position: relative;
+    top: -180px;
+    left: 2%;
+    color: #34355E;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 1252px) {
+    .What_SQL_Used {
+        top: 150px;
+        left: 2%;
+        width: 800px;
+    }
+}
+
+.What_Used_Text {
+    font-family: Inter;
+    top: -150px;
+    position: relative;
+    left: 2%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 1400px;
+ }
+
+ @media screen and (max-width: 1252px) {
+    .What_Used_Text {
+        top: 160px;
+        left: 2%;
+        width: 1100px;
+    }
+}
+
+
+ .What_Used_Text_ul {
+    font-family: Inter;
+    top: -150px;
+    position: relative;
+    left: 4%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 700px;
+ }
+
+ @media screen and (max-width: 1252px) {
+    .What_Used_Text_ul {
+        top: 160px;
+        left: 4%;
+        width: 800px;
+    }
+}
+
+
+.Is_SQL {
+    opacity: 1;
+    position: relative;
+    top: -120px;
+    left: 2%;
+    color: #34355E;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.Learning_SQL {
+    color: #56507C;
+    font-weight: normal;
+    font-family: Inter;
+
+}
+
+@media screen and (max-width: 1252px) {
+    .Is_SQL {
+        top: 190px;
+        left: 2%;
+        width: 800px;
+    }
+}
+
+.We_Have_SQL {
+    opacity: 1;
+    position: relative;
+    top: -100px;
+    left: 2%;
+    font-family: Inter;
+    font-size: 1.2rem;
+    width: 1600px;
+}
+
+
+
+@media screen and (max-width: 1252px) {
+    .We_Have_SQL {
+        top: 220px;
+        left: 2%;
+        width: 800px;
+    }
+}
+
+
+.Image_SQL_Stores {
+    position: relative;
+    max-width: 1400px;
+    min-width: 60px;
+    width: 1400px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1253px) {
+    .Image_SQL_Stores {
+        top: -80px;
+        left: 2%;
+        width: 1400px;
+    
+    }
+
+}
+
+@media screen and (max-width: 1252px) {
+    .Image_SQL_Stores {
+        top: 40px;
+        left: 2%;
+        width: 900px;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    .Image_SQL_Stores {
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        
+    }
+}
+
+.Here_SQL {
+    opacity: 1;
+    position: relative;
+    top: -80px;
+    left: 2%;
+    font-family: Inter;
+    font-size: 1.2rem;
+    width: 1150px;
+}
+
+@media screen and (max-width: 1252px) {
+    .Here_SQL {
+        top: 40px;
+        left: 2%;
+        width: 1200px;
+    }
+}
+
+
+.Create {
+    color: #2D2F55;
+    text-align: center;
+    font-weight: 700;
+    font-family: inter;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.Text_Create
+{
+color: #2D2F55;
+font-weight: normal;
+}
+
+
+@media screen and (max-width: 1252px) {
+    .Create {
+        top: 80px;
+        left: -10%;
+        width: 1200px;
+    }
+}
+
+.Alter {
+    color: #282A68;
+    text-align: center;
+    font-weight: 700;
+    font-family: inter;
+    font-size: 1.5rem;
+    position: relative;
+    top: 100px;
+}
+
+.Text_Alter
+{
+color: #282A68;
+font-weight: normal;
+}
+
+
+@media screen and (max-width: 1252px) {
+    .Alter {
+        top: 140px;
+        left: -10%;
+        width: 1200px;
+    }
+}
+
+
+.Drop {
+    color: #262984;
+    text-align: center;
+    font-weight: 700;
+    font-family: inter;
+    font-size: 1.5rem;
+    position: relative;
+    top: 180px;
+}
+
+.Text_Drop
+{
+color: #262984;
+font-weight: normal;
+}
+
+
+@media screen and (max-width: 1252px) {
+    .Drop {
+        top: 200px;
+        left: -10%;
+        width: 1200px;
+    }
+}
+
+.Select {
+    color: #2025A3;
+    text-align: center;
+    font-weight: 700;
+    font-family: inter;
+    font-size: 1.5rem;
+    position: relative;
+    top: 240px;
+}
+
+.Text_Select
+{
+color: #2025A3;
+font-weight: normal;
+}
+
+
+@media screen and (max-width: 1252px) {
+    .Select {
+        top: 240px;
+        left: -10%;
+        width: 1200px;
+    }
+}
+
+
+.Insert {
+    color: #191FBB;
+    text-align: center;
+    font-weight: 700;
+    font-family: inter;
+    font-size: 1.5rem;
+    position: relative;
+    top: 280px;
+}
+
+.Text_Insert
+{
+color: #191FBB;
+font-weight: normal;
+}
+
+
+@media screen and (max-width: 1252px) {
+    .Insert {
+        top: 280px;
+        left: -10%;
+        width: 1200px;
+    }
+}
+
+.Update {
+    color: #0A11D5;
+    text-align: center;
+    font-weight: 700;
+    font-family: inter;
+    font-size: 1.5rem;
+    position: relative;
+    top: 340px;
+}
+
+.Text_Update
+{
+color: #0A11D5;
+font-weight: normal;
+}
+
+
+@media screen and (max-width: 1252px) {
+    .Update {
+        top: 340px;
+        left: -10%;
+        width: 1200px;
+    }
+}
+
+.Delete {
+    color: #4F05EC;
+    text-align: center;
+    font-weight: 700;
+    font-family: inter;
+    font-size: 1.5rem;
+    position: relative;
+    top: 380px;
+}
+
+.Text_Delete
+{
+color: #4F05EC;
+font-weight: normal;
+}
+
+
+@media screen and (max-width: 1252px) {
+    .Delete {
+        top: 380px;
+        left: -10%;
+        width: 1200px;
+    }
+}
+
+
+.Grant {
+    color: #8750FC;
+    text-align: center;
+    font-weight: 700;
+    font-family: inter;
+    font-size: 1.5rem;
+    position: relative;
+    top: 420px;
+}
+
+.Text_Grant
+{
+color: #8750FC;
+font-weight: normal;
+}
+
+
+@media screen and (max-width: 1252px) {
+    .Grant {
+        top: 420px;
+        left: -10%;
+        width: 1200px;
+    }
+}
+
+.Revoke {
+    color: #D149DD;
+    text-align: center;
+    font-weight: 700;
+    font-family: inter;
+    font-size: 1.5rem;
+    position: relative;
+    top: 460px;
+}
+
+.Text_Revoke
+{
+color: #D149DD;
+font-weight: normal;
+}
+
+
+@media screen and (max-width: 1252px) {
+    .Revoke {
+        top: 460px;
+        left: -10%;
+        width: 1200px;
+    }
+}
+
+.Commands_SQL {
+    color: #2D2F55;
+    font-size: 1.2rem;
+    top: 500px;
+    left: 2%;
+    position: relative;
+    margin-bottom: 50px;
+    width: 1600px;
+}
+@media screen and (max-width: 1252px) {
+    .Commands_SQL {
+        top: 490px;
+        left: 2%;
+        width: 1400px;
+    }
+}
+
+.space {
+    top: 500px;
+    margin-bottom: 50px;
+    position: relative;
+    color: transparent ;
+}
+
+
+
+
+
+

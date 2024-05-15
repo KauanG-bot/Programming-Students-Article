@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $dbBanco = 'localhost';
         $dbUserName = 'root';
         $dbPassword = '';
-        $dbName = 'dadosusuario';
+        $dbName = 'usuario';
 
         $conn = new mysqli($dbBanco, $dbUserName, $dbPassword, $dbName);
 
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($result->num_rows > 0) {
             // Login bem-sucedido, redireciona para a página de destino
-            header("Location: index.html");
+            header("Location: postagem.html");
             exit();
         } else {
             // Credenciais incorretas]
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     // Redireciona se a requisição não for POST
-    header("Location: index.html");
+    header("Location: postagem.html");
     exit();
 }
 
