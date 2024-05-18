@@ -1,0 +1,359 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-size: 14px;
+    font-family: "poppins", sans-serif;
+    background: #F0F4FF;
+    margin-bottom: 50px;
+    width: 1510px;
+}
+
+
+@media (min-width: 768px) {
+    body {
+        min-height: 230vh;
+        margin-bottom: 50px;
+        
+    }
+}
+
+
+
+
+
+
+.Cabecalho {
+    background: #030011;
+    width: 100%;
+    max-height: 55px;
+    height: 6vh;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+}
+
+@media (max-width:1252px) {
+    .Cabecalho{
+        
+            width: 88%;
+    }
+}
+.Home {
+    color: rgba(95, 159, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: Inter;
+    opacity: 1;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: translate(-50%, -50%);
+}
+
+.Home:hover {
+    color: rgba(54, 50, 255, 1);
+    font-weight: bold;
+}
+
+@media (min-width: 60px) {
+    .Home {
+        font-size: 1rem;
+    }
+
+    .Artigos {
+        color: rgba(95, 159, 255, 1);
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        font-family: Inter;
+        font-size: 1rem;
+        cursor: pointer;
+        text-decoration: underline;
+        transform: translate(-60%, -50%);
+    }
+
+    .Artigos:hover {
+        color: rgba(54, 50, 255, 1);
+        font-weight: bold;
+    }
+
+    .Sobre {
+        color: rgba(95, 159, 255, 1);
+        position: absolute;
+        top: 50%;
+        left: 82%;
+        font-family: Inter;
+        font-size: 1.5rem;
+        cursor: pointer;
+        text-decoration: underline;
+        transform: translate(-50%, -50%);
+    }
+
+    .Sobre:hover {
+        color: rgba(54, 50, 255, 1);
+        font-weight: bold;
+    }
+
+    .Post {
+        color: rgba(95, 159, 255, 1);
+        position: absolute;
+        top: 50%;
+        left: 89%;
+        font-family: Inter;
+        font-size: 1rem;
+        cursor: pointer;
+        text-decoration: underline;
+        transform: translate(-50%, -50%);
+        margin-left: 20px;
+    }
+
+    .Post:hover {
+        color: rgba(54, 50, 255, 1);
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-height: 60px) {
+    .Sobre {
+        font-size: 1rem;
+    }
+
+    .Kode {
+        color: rgba(95, 159, 255, 1);
+        position: absolute;
+        top: 50%;
+        left: 12%;
+        font-family: Inter;
+        font-size: 1.5rem;
+        opacity: 1;
+        text-align: left;
+        cursor: pointer;
+        transform: translate(-35%, -50%);
+    }
+
+    .Kodeimage {
+        width: 30px;
+        position: absolute;
+        top: 50%;
+        left: 6%;
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-height: 200px) {
+
+    .Kode,
+    .Kodeimage {
+        font-size: 1rem;
+        width: 10px;
+    }
+}
+
+.What_Is_Kotlin {
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 2%;
+    color: #34355E;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+
+
+.Author1 {
+  color: #233060;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: -0.04em;
+  left: 40px;
+
+}
+
+.Author1 {
+  left: 40px;
+  position: relative;
+}
+
+.Kotlin_Is_General{
+    font-family: Inter;
+    top: 10px;
+    position: relative;
+    left: 1%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 1500px;
+}
+
+@media screen and (max-width: 1252px) {
+    .Kotlin_Is_General {
+        left: 1%;
+        width: 1000px;
+    }
+}
+
+
+.Kotlin_More_Java {
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 1%;
+    color: #34355E;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.Kotlin_At_Firts{
+    font-family: Inter;
+    top: 10px;
+    position: relative;
+    left: 1%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 1500px;
+}
+
+@media screen and (max-width: 1252px) {
+    .Kotlin_At_Firts {
+        left: 1%;
+        width: 1000px;
+    }
+}
+
+.Kotlin_Java_Idiom{
+    margin-top: 30px;
+    font-family: Inter;
+    top: 10px;
+    position: relative;
+    left: 1%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 1500px;
+}
+
+@media screen and (max-width: 1252px) {
+    .Kotlin_Java_Idiom {
+        left: 1%;
+        width: 1000px;
+    }
+}
+
+.Kotlin_Java_Idiom_Border{ 
+	background-color:rgba(90.73745906352997, 117.01946318149567, 255, 0.2800000011920929);
+	width:1400px;
+	height:129px;
+    top: 50px;
+    position: relative;
+	border-radius: 10px;
+    border:5px solid rgba(65.50666853785515, 72.08124294877052, 245.64999371767044, 1);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    left: 2%;
+}
+
+@media (max-width: 1252px) {
+    .Kotlin_Java_Idiom_Border {
+    width: 900px;
+    }
+}
+
+.String_Builder {
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+}
+
+.Becomes_In_Kotlin {
+    top: 100px;
+    position: relative;
+    font-family: Inter;
+    position: relative;
+    left: 1%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 1500px;
+}
+
+.Becomes_In_Kotlin_Border {
+	background-color:rgba(202.4359917640686, 255, 90.73745906352997, 0.14000000059604645);
+	width:1400px;
+	height:129px;
+    top: 130px;
+    position: relative;
+	border-radius: 10px;
+    border:5px solid rgba(111.90143421292305, 206.11170172691345, 17.691181898117065, 1);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #67B121;
+    left: 2%;
+}
+
+@media (max-width: 1252px) {
+    .Becomes_In_Kotlin_Border {
+    width: 900px;
+    }
+}
+
+.String_Builder_Val {
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+}
+
+.Kotlin_You {
+    font-family: Inter;
+    top: 200px;
+    position: relative;
+    left: 1%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 1400px;
+}
+
+@media (max-width: 1252px) {
+    .Kotlin_You {
+    width: 1100px;
+    }
+}
+
+.Kotlin_App {
+    opacity: 1;
+    position: relative;
+    top: 220px;
+    left: 1%;
+    color: #34355E;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.Kotlin_Used_Kind {
+    font-family: Inter;
+    top: 250px;
+    position: relative;
+    left: 1%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 1400px;
+}

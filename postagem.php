@@ -14,7 +14,7 @@ class Postagem {
         $stmt->bindParam(':texto', $texto);
         $stmt->bindParam(':imagem_nome', $imagem_nome);
         $stmt->bindParam(':imagem_tipo', $imagem_tipo);
-        $stmt->bindParam(':imagem_dados', $imagem_dados, PDO::PARAM_LOB);
+        $stmt->bindValue(':imagem_dados', $imagem_dados, PDO::PARAM_STR);
         return $stmt->execute();
     }
 
@@ -26,19 +26,28 @@ class Postagem {
     }
 }
 
-$dbBanco = 'localhost';
-$dbUserName = 'root';
-$dbPasword = '';
-$dbName = 'usuario'; 
-$dsn = "mysql:host=$dbBanco;dbname=$dbName";
-$usuario = $dbUserName;
-$senha = $dbPasword;
+// Credenciais do usuário
+$userEmail = 'CloudPHP';
+$userPassword = 'Log64602608';
+
+// Configurações do banco de dados
+$dbBanco = 'articleprogrammingstudents.database.windows.net';
+$dbName = 'article';
 
 try {
-    $conexao = new PDO($dsn, $usuario, $senha);
-    $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
+    // Conexão PDO usando autenticação de usuário do Azure AD
+$conexao = new PDO(
+    "sqlsrv:Server=$dbBanco;Database=$dbName",
+    $userEmail,
+    $userPassword,
+    array(
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::SQLSRV_ATTR_ENCODING => PDO::SQLSRV_ENCODING_UTF8
+    )
+);
+
     $postagem = new Postagem($conexao);
+
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $titulo = $_POST['titulo'] ?? '';

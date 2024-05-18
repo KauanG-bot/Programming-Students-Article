@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="ArtigoKotlin.css" rel="stylesheet" />
     <title>Document</title>
 </head>
+
 <body>
-    
-</body>
+    <header>
+        <div class="Cabecalho">
+            <a href="#" class="Logo">
+                <img src="Imagens/image.png" class="Kodeimage" alt="Logo">
+                <p class="Kode">KodeStudy</p>
+            </a>
+            <nav>
+                <a href="index.html" class="Home">Home</a>
+                <a href="#" class="Artigos" onclick="scrollDown()">Artigos</a>
+                <a href="#" class="Sobre">Sobre nós</a>
+                <a href="postagem.html" class="Post">Postagem</a>
+            </nav>
+        </div>
+    </header>
+
+    <p class="What_Is_Kotlin">What is Kotlin? The Java alternative explained</p>
+
+
+        <span class="Author1">Author:
+        <a href="https://www.infoworld.com/author/Martin-Heller/" target="_blank"> Martin Heller</a></span>
+
+
+<p class="Kotlin_Is_General">Kotlin is a general purpose, free, open source, statically typed “pragmatic” programming language initially
+    designed for the JVM (Java Virtual Machine) and Android, and combines object-oriented and functional
+    programming features. It is focused on interoperability, safety, clarity, and tooling support. Versions of
+    Kotlin targeting JavaScript ES5.1 and native code (using LLVM) for a number of processors are in production
+    as well.
+    <br>
+    <br>
+    Kotlin originated at JetBrains, the company behind IntelliJ IDEA, in 2010, and has been open source since
+    2012. The Kotlin project on GitHub has more than 770 contributors; while the majority of the team works at
+    JetBrains, there have been nearly 100 external contributors to the Kotlin project. JetBrains uses Kotlin in
+    many of its products including its flagship IntelliJ IDEA.</p>
+
+
+    <p class="Kotlin_More_Java">Kotlin as a more concise Java language</p>
+
+    <p class="Kotlin_At_Firts">At first glance, Kotlin looks like a more concise and streamlined version of Java. Consider the screenshot above, where I have converted a Java code sample (at left) to Kotlin automatically. Notice that the mindless repetition inherent in instantiating Java variables has gone away. </p>
+    <p class="Kotlin_Java_Idiom"> The Java idiom</p>
+
+    <div class="Kotlin_Java_Idiom_Border"><p class="String_Builder">StringBuilder sb = new StringBuilder();</p></div>
+
+    <p class="Becomes_In_Kotlin">Becomes in Kotlin</p>
+    <div class="Becomes_In_Kotlin_Border"><p class="String_Builder_Val">val sb = StringBuilder()</p></div>
+
+    <p class="Kotlin_You">You can see that functions are defined with the fun keyword, and that semicolons are now optional when newlines are present. The val keyword declares a read-only property or local variable. Similarly, the var keyword declares a mutable property or local variable.
+
+        Nevertheless, Kotlin is strongly typed. The val and var keywords can be used only when the type can be inferred. Otherwise you need to declare the type. Type inference seems to be improving with each release of Kotlin.
+        Have a look at the function declaration near the top of both panes. The return type in Java precedes the prototype, but in Kotlin it succeeds the prototype, demarcated with a colon as in Pascal.
+        <br><br>   
+        It is not completely obvious from this example, but Kotlin has relaxed Java’s requirement that functions be class members. In Kotlin, functions may be declared at top level in a file, locally inside other functions, as a member function inside a class or object, and as an extension function. Extension functions provide the C#-like ability to extend a class with new functionality without having to inherit from the class or use any type of design pattern such as Decorator.
+        <br><br>   
+        For Groovy fans, Kotlin implements builders; in fact, Kotlin builders can be type checked. Kotlin supports delegated properties, which can be used to implement lazy properties, observable properties, vetoable properties, and mapped properties.
+        Many asynchronous mechanisms available in other languages can be implemented as libraries using Kotlin coroutines. This includes async/await from C# and ECMAScript, channels and select from Go, and generators/yield from C# and Python.</p>
+        <p class="Kotlin_App">Kotlin applications</p>  
+        
+        <p class="Kotlin_Used_Kind">Kotlin can be used for any kind of development: multi-platform, server-side, client-side web, Android, native code, data science, and even competitive programming. According to the Kotlin Census 2020, the latest Kotlin developer survey conducted by JetBrains, the most popular uses for Kotlin are mobile development (63%), web back-end development (40%), library or framework development (17%), tooling (9%), desktop (5%), web front end (5%), and systems programming (5%). The most popular platform targets are Kotlin/Android (65%), Kotlin/JVM server (48%), Kotlin/JVM other (15%), Kotlin/Native (10%), and Kotlin/JS (6%).
+            Overall, Kotlin offers several advantages over Java for code to be run on the JVM, and Kotlin can also be used to generate JavaScript and native code. Compared to Java, Kotlin is safer, more concise, and more explicit. It supports functional programming in addition to object-oriented programming, offers a bunch of useful features (extension functions, builders, coroutines, lambdas, etc.), and provides null safety through nullable and non-nullable types. Best of all, if you already know Java, you’ll be productive in Kotlin in no time.</p>
+    </body>
 </html>

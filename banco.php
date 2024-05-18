@@ -1,43 +1,52 @@
 <?php  
-
-  if($_SERVER["REQUEST_METHOD"] =="POST"){
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $nome = $_POST["nome"];
     $usuario = $_POST["usuario"];
     $email = $_POST["email"];
-    $senha= ($_POST["senha"]);
-  
+    $senha = $_POST["senha"];
 
-    $dbBanco = 'localhost';
-    $dbUserName = 'root';
-    $dbPasword = '';
-    $dbName = 'usuario';
-    
-     $coon = new mysqli($dbBanco,$dbUserName, $dbPasword, $dbName);
-    
-     if($coon ->connect_error){
-       die("Conexão falhou. " .$coon->connect_error);
-     }
+    // Credenciais do usuário
+    $userEmail = 'CloudPHP';
+    $userPassword = 'Log64602608';
 
-$nome = $coon->real_escape_string($nome);
-$usuario = $coon->real_escape_string($usuario);
-$email = $coon->real_escape_string($email);
+    // Configurações do banco de dados
+    $dbBanco = 'articleprogrammingstudents.database.windows.net';
+    $dbName = 'article';
 
-$query = "INSERT INTO usuario (Nome, Usuario, Email, Senha) VALUES ('$nome', '$usuario', '$email', '$senha')";
+    try {
+        // Conexão PDO usando autenticação de usuário do Azure AD
+        $conexao = new PDO(
+            "sqlsrv:Server=$dbBanco;Database=$dbName",
+            $userEmail,
+            $userPassword,
+            array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)
+        );
 
-if($coon->query($query) === true){
-    //mudar o local do login Aqui!
-    header("Location: teste.html");
-}
-else{
-    echo "Falha ao cadastrar" .$coon->error; 
-}
+        // Prepara a query para evitar SQL Injection
+        $query = "INSERT INTO usuario (Nome, Usuario, Email, Senha) VALUES (:nome, :usuario, :email, :senha)";
+        $stmt = $conexao->prepare($query);
 
-$coon->close();
-}
-else{
-    header("Location:index.html");
+        // Bind dos parâmetros
+        $stmt->bindParam(':nome', $nome);
+        $stmt->bindParam(':usuario', $usuario);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':senha', $senha);
+
+        // Executa a query
+        if ($stmt->execute()) {
+            // Redireciona para a página de sucesso
+            header("Location: index.html");
+        } else {
+            // Exibe mensagem de erro
+            echo "Falha ao cadastrar: " . $stmt->errorInfo()[2];
+        }
+
+    } catch (PDOException $e) {
+        echo "Erro de conexão: " . $e->getMessage();
+    }
+} else {
+    header("Location: index.html");
     exit();
 }
 ?>
-
