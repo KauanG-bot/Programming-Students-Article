@@ -86,7 +86,7 @@ try {
     echo '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">';
     echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
     echo "<link href=\"postagem.css\" rel=\"stylesheet\"/>";
-    echo "<title>Postagens</title>";
+    echo "<title>Post</title>";
     echo "</head>";
     echo "<body>";
     echo "<div class=\"tela\">
