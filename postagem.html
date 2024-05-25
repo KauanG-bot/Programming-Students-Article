@@ -44,7 +44,7 @@
     var uploadedImage = document.createElement("img");
     uploadedImage.src = reader.result;
     uploadedImage.style.maxWidth = "100%";
-    imagePreview.innerHTML = ""; // Limpa o conteÃºdo anterior
+    imagePreview.innerHTML = ""; 
     imagePreview.appendChild(uploadedImage);
   };
   reader.readAsDataURL(event.target.files[0]);

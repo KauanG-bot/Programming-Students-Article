@@ -4,16 +4,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (isset($_POST['username']) && isset($_POST['senha'])) {
 
-        // Credenciais do usuário
         $userEmail = 'CloudPHP';
         $userPassword = 'Log64602608';
 
-        // Configurações do banco de dados
         $dbBanco = 'articleprogrammingstudents.database.windows.net';
         $dbName = 'article';
 
         try {
-            // Conexão PDO usando autenticação de usuário do Azure AD
             $conn = new PDO(
                 "sqlsrv:Server=$dbBanco;Database=$dbName",
                 $userEmail,
@@ -21,11 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)
             );
 
-            // Prevenção contra injeção de SQL usando instruções preparadas
             $query = "SELECT * FROM usuario WHERE Usuario = ? AND Senha = ?";
             $stmt = $conn->prepare($query);
 
-            // Verifica se a preparação da consulta foi bem-sucedida
             if (!$stmt) {
                 die("Preparação da consulta falhou. " . $conn->error);
             }
@@ -39,11 +34,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
             if ($result) {
-                // Login bem-sucedido, redireciona para a página de destino
                 header("Location: postagem.html");
                 exit();
             } else {
-                // Credenciais incorretas
                 echo "Usuário ou senha incorretos.";
             }
 
@@ -54,7 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Usuário e senha não foram fornecidos!";
     }
 } else {
-    // Redireciona se a requisição não for POST
     header("Location: postagem.html");
     exit();
 }

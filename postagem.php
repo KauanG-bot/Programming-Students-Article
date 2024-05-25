@@ -14,7 +14,6 @@ class Postagem {
         $stmt->bindParam(':texto', $texto);
         $stmt->bindParam(':imagem_nome', $imagem_nome);
         $stmt->bindParam(':imagem_tipo', $imagem_tipo);
-        // Codificar dados binários como base64
         $imagem_dados_base64 = base64_encode($imagem_dados);
         $stmt->bindParam(':imagem_dados', $imagem_dados_base64);
         return $stmt->execute();
@@ -26,7 +25,6 @@ class Postagem {
         $stmt->execute();
         $postagens = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        // Decodificar dados base64 de imagem de cada postagem
         foreach ($postagens as &$postagem) {
             $postagem['imagem_dados'] = base64_decode($postagem['imagem_dados']);
         }
@@ -35,16 +33,13 @@ class Postagem {
     }
 }
 
-// Credenciais do usuário
 $userEmail = 'CloudPHP';
 $userPassword = 'Log64602608';
 
-// Configurações do banco de dados
 $dbBanco = 'articleprogrammingstudents.database.windows.net';
 $dbName = 'article';
 
 try {
-    // Conexão PDO usando autenticação de usuário do Azure AD
     $conexao = new PDO(
         "sqlsrv:Server=$dbBanco;Database=$dbName",
         $userEmail,
@@ -64,12 +59,9 @@ try {
         if (isset($_FILES['imagem']) && $_FILES['imagem']['error'] === UPLOAD_ERR_OK) {
             $imagem_tmp = $_FILES['imagem']['tmp_name'];
             $imagem_nome = $_FILES['imagem']['name'];
-            $imagem_tipo = $_FILES['imagem']['type'];
-            
-            // Lendo o conteúdo da imagem
+            $imagem_tipo = $_FILES['imagem']['type']; 
             $imagem_dados = file_get_contents($imagem_tmp);
             
-            // Tente salvar a postagem
             if ($postagem->criarPostagem($titulo, $texto, $imagem_nome, $imagem_tipo, $imagem_dados)) {
                 echo "Postagem criada com sucesso!";
             } else {
@@ -113,9 +105,9 @@ try {
         echo "<h2 style='text-align:center; margin-bottom: 20px; margin-top: 40px;'>" . (isset($post['titulo']) && !empty($post['titulo']) ? htmlspecialchars($post['titulo']) : 'Título não disponível') . "</h2>";
         echo "<p style='text-align:center;'>" . (isset($post['texto']) && !empty($post['texto']) ? htmlspecialchars($post['texto']) : 'Texto não disponível') . "</p>";
         if (!empty($post['imagem_dados']) && !empty($post['imagem_tipo'])) {
-            echo "<img src='data:{$post['imagem_tipo']};base64," . base64_encode($post['imagem_dados']) . "' alt='Imagem da postagem' style='display:block; margin: 0 auto;'>";
+            echo "<img src='data:{$post['imagem_tipo']};base64," . base64_encode($post['imagem_dados']) . "' alt='Imagem da postagem' style='display:block; margin: 0 auto; max-width:1000px; max-height:700px; '>";
         } else {
-            echo "<p style='text-align:center;'>Imagem não disponível</p>";
+            echo "<p style='text-align:center; max-width:1000px; '>Imagem não disponível</p>";
         }
         echo "</div>";
     }
