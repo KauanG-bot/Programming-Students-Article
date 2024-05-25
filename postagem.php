@@ -92,8 +92,7 @@ try {
     echo "<div class=\"tela\">
     <div class=\"Cabecalho\">
         <a href=\"index.html\" class=\"Home\">Home</a>
-        <a href=\"ArtigoPython.html\"  class=\"Artigos\">Artigos</a>
-        <a class=\"Sobre\">Sobre n&oacute;s</a>
+        <a class=\"Sobre\">About Us</a>
         <p class=\"Kode\">KodeStudy</p>
         <img src=\"Imagens/image.png\" class=\"Kodeimage\">
     </div>
