@@ -11,7 +11,7 @@ body {
     font-family: "poppins", sans-serif;
     background: #F0F4FF;
     margin-bottom: 50px;
-    width: 1510px;
+    width: 1480px;
 }
 @media (max-width: 1252px) {
     body {
@@ -289,6 +289,7 @@ body {
     font-family: Inter;
     font-weight: 700;
     font-size: 1.5rem;
+    width: 1000px;
 }
 
 @media screen and (max-width: 1252px) {
@@ -367,6 +368,7 @@ body {
     font-family: Inter;
     font-weight: 700;
     font-size: 1.5rem;
+    width: 1000px;
 }
 
 @media screen and (max-width: 1252px) {
@@ -426,6 +428,7 @@ body {
     font-family: Inter;
     font-weight: 700;
     font-size: 1.5rem;
+    width: 1000px;
 }
 
 .Learning_SQL {
@@ -526,6 +529,7 @@ body {
     font-family: inter;
     font-size: 1.5rem;
     position: relative;
+    width: 1500px;
 }
 
 .Text_Create {

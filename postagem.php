@@ -106,20 +106,19 @@ try {
     </div>
 </div>";
 
-    echo "<h1 class=\"postagenscenter\">Postagens</h1>";
 
     foreach ($todasPostagens as $post) {
-        echo "<div class='postagem'>";
-        echo "<h2>" . (isset($post['titulo']) && !empty($post['titulo']) ? htmlspecialchars($post['titulo']) : 'Título não disponível') . "</h2>";
-        echo "<p>" . (isset($post['texto']) && !empty($post['texto']) ? htmlspecialchars($post['texto']) : 'Texto não disponível') . "</p>";
+        echo "<div class='postagem' style='text-align:center;'>";
+        echo "<h2 style='text-align:center; margin-bottom: 20px; margin-top: 40px;'>" . (isset($post['titulo']) && !empty($post['titulo']) ? htmlspecialchars($post['titulo']) : 'Título não disponível') . "</h2>";
+        echo "<p style='text-align:center;'>" . (isset($post['texto']) && !empty($post['texto']) ? htmlspecialchars($post['texto']) : 'Texto não disponível') . "</p>";
         if (!empty($post['imagem_dados']) && !empty($post['imagem_tipo'])) {
-            echo "<img src='data:{$post['imagem_tipo']};base64," . base64_encode($post['imagem_dados']) . "' alt='Imagem da postagem'>";
+            echo "<img src='data:{$post['imagem_tipo']};base64," . base64_encode($post['imagem_dados']) . "' alt='Imagem da postagem' style='display:block; margin: 0 auto;'>";
         } else {
-            echo "<p>Imagem não disponível</p>";
+            echo "<p style='text-align:center;'>Imagem não disponível</p>";
         }
         echo "</div>";
     }
-
+    
     echo "</body>";
     echo "</html>";
 

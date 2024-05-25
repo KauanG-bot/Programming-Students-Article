@@ -17,17 +17,11 @@ body {
 
 @media (min-width: 768px) {
     body {
-        min-height: 230vh;
+        min-height: 210vh;
         margin-bottom: 50px;
         
     }
 }
-
-
-
-
-
-
 .Cabecalho {
     background: #030011;
     width: 100%;
@@ -45,6 +39,20 @@ body {
             width: 88%;
     }
 }
+.Cabecalho {
+    background: #030011;
+    width: 100%;
+    max-height: 55px;
+    height: 6vh;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+}
+
+
+
+
 .Home {
     color: rgba(95, 159, 255, 1);
     position: absolute;
@@ -148,6 +156,39 @@ body {
         transform: translate(-50%, -50%);
     }
 }
+
+@media screen and (max-height: 200px) {
+
+    .Kode,
+    .Kodeimage {
+        font-size: 1rem;
+        width: 10px;
+    }
+}
+
+
+
+    .Kode {
+        color: rgba(95, 159, 255, 1);
+        position: absolute;
+        top: 50%;
+        left: 12%;
+        font-family: Inter;
+        font-size: 1.5rem;
+        opacity: 1;
+        text-align: left;
+        cursor: pointer;
+        transform: translate(-35%, -50%);
+    }
+
+    .Kodeimage {
+        width: 30px;
+        position: absolute;
+        top: 50%;
+        left: 6%;
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
 
 @media screen and (max-height: 200px) {
 

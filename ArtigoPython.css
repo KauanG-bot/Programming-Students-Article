@@ -282,10 +282,10 @@ body {
 
 .imagePython {
   position: relative;
-  top: -10px;
+  top: 10px;
   /* Ajuste conforme necessário */
   float: right;
-  left: -50px;
+  left: -10px;
   max-width: 300px;
   min-width: 60px;
   width: 100%;
@@ -294,8 +294,8 @@ body {
 
 @media screen and (min-width: 1253px) {
   .imagePython {
-      top: -90px;
-      left: -150px;
+      top: -70px;
+      left: -0px;
   }
 }
 
