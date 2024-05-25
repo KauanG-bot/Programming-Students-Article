@@ -90,6 +90,7 @@ try {
     echo "<meta charset='UTF-8'>";
     echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
     echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
+    echo '<link rel="shortcut icon" href="/Imagens/image.ico" type="image/x-icon">';
     echo '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">';
     echo "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
     echo "<link href=\"postagem.css\" rel=\"stylesheet\"/>";
